@@ -1,0 +1,116 @@
+<template>
+  <ion-page>
+    <ion-content :fullscreen="true">
+      <div class="top-bar">
+        <div class="menu-title">
+          <a v-on:click="clear"
+            ><svg
+              height="20px"
+              width="20px"
+              x="0"
+              y="0"
+              viewBox="0 0 64 64"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              fill-rule="evenodd"
+            >
+              <g>
+                <path
+                  d="M47.83 55.172 24.66 32 47.83 8.828c1.56-1.561 1.56-4.095 0-5.656s-4.1-1.561-5.66 0l-26 26a4.003 4.003 0 0 0 0 5.656l26 26c1.56 1.561 4.1 1.561 5.66 0s1.56-4.095 0-5.656z"
+                  fill="#ffffff"
+                  opacity="1"
+                  data-original="#000000"
+                ></path>
+              </g>
+            </svg>
+          </a>
+
+          <h1>Tipos</h1>
+
+          <svg
+            x="0"
+            y="0"
+            viewBox="0 0 25.954 25.954"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class="title-svg"
+          >
+            <g transform="matrix(-1,0,0,1,25.954514938406646,0)">
+              <path
+                d="M24.44 5.994C15.143 5.994 18.172 0 11.505 0 7.286 0 6.518 2.148 5.846 4.166 5.253 5.945.467 18.511.467 18.511l.035-.048C.17 19.158.003 19.87.003 20.51c0 2.705 1.889 5.444 5.5 5.444 4.055 0 5.5-2.066 5.5-4 0-2.289-2.386-4-4.519-4-2.405 0-3.481 1.256-3.481 2.5 0 1.425 1.29 2.5 3 2.5a1 1 0 1 0 0-2c-.533 0-1-.233-1-.5 0-.204.527-.5 1.481-.5 1.11 0 2.519.941 2.519 2 0 1.74-2.193 2-3.5 2-2.418 0-3.5-1.729-3.5-3.444 0-.923.871-3.556 4.74-3.556 3.107 0 4.196 1.617 5.574 3.664 1.6 2.377 3.591 5.336 9.294 5.336.513 0 .919-.39.977-.887h.012s3.096-16.54 3.277-17.332c.47-2.047-1.437-1.741-1.437-1.741z"
+                fill="#ffffff"
+                data-original="#030104"
+                class=""
+                opacity="1"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <main>
+        <wraplist />
+      </main>
+    </ion-content>
+  </ion-page>
+</template>
+
+<style scoped>
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5.6rem;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+app-wrap {
+  width: 90%;
+}
+</style>
+
+<script>
+import { IonPage, IonContent } from "@ionic/vue";
+import wraplist from "@/components/wrapComponent.vue";
+
+export default {
+  components: { IonPage, IonContent, wraplist },
+
+  setup() {
+    setTimeout(() => {
+      let allBtn = document.querySelectorAll(".wrapBtn");
+
+      allBtn.forEach((bt) => {
+        bt.addEventListener("click", (e) => {
+          localStorage.setItem(
+            "colorGroup",
+            bt.querySelectorAll(".hideVinils")[0].innerHTML
+          );
+        });
+      });
+
+      allBtn.forEach((bt) => {
+        bt.addEventListener("click", (e) => {
+          localStorage.setItem("wrapTypeSel", bt.value);
+        });
+      });
+    }, 75);
+  },
+
+  computed: {},
+
+  methods: {
+    clear: function () {
+      history.go(-1);
+      localStorage.removeItem("brandWrapSel");
+      localStorage.removeItem("wrapTypeSel");
+      localStorage.removeItem("colorGroup");
+      localStorage.removeItem("color");
+      localStorage.removeItem("colorRetro");
+      localStorage.removeItem("colorRoof");
+    },
+  },
+};
+</script>

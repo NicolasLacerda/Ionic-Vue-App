@@ -1,0 +1,72 @@
+[
+  {
+    "image": "countach-2022.png",
+    "brand": "lamborghini",
+    "name": "Countach",
+    "year": 2022,
+    "url": "lamborghini/countach/countach-2022"
+  },
+  {
+    "image": "fit-2007.png",
+    "brand": "honda",
+    "name": "Honda Fit",
+    "year": 2007,
+    "url": "honda/fit/fit-2007"
+  },
+  {
+    "image": "ecosport-2017.png",
+    "brand": "ford",
+    "name": "Eco Sport",
+    "year": 2017,
+    "url": "ford/ecosport/ecosport-2017"
+  },
+  {
+    "image": "duster-2019.png",
+    "brand": "dacia",
+    "name": "Duster",
+    "year": 2019,
+    "url": "dacia/duster/duster-2019"
+  },
+  {
+    "image": "logan-2019.png",
+    "brand": "dacia",
+    "name": "Logan",
+    "year": 2019,
+    "url": "dacia/logan/logan-2019"
+  },
+  {
+    "image": "ecosport-2017.png",
+    "brand": "seat",
+    "name": "Eco Sport",
+    "year": 2017,
+    "url": "ford/ecosport/duster-2010"
+  },
+  {
+    "image": "corolla-2023.png",
+    "brand": "toyota",
+    "name": "Corolla Hatchback",
+    "year": 2023,
+    "url": "toyota/corolla/corolla-2023"
+  },
+  {
+    "image": "corollaS-2023.png",
+    "brand": "toyota",
+    "name": "Corolla",
+    "year": 2023,
+    "url": "toyota/corollaS/corollaS-2023"
+  },
+  {
+    "image": "rav4-2022.png",
+    "brand": "toyota",
+    "name": "Rav4",
+    "year": 2022,
+    "url": "toyota/rav4/rav4-2022"
+  },
+  {
+    "image": "yaris-2019.png",
+    "brand": "toyota",
+    "name": "Yaris",
+    "year": 2019,
+    "url": "toyota/yaris/yaris-2019"
+  }
+]
