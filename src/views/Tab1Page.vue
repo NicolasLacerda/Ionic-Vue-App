@@ -39,8 +39,8 @@
         </div>
       </div>
       <main>
-        <button class="container btn" value="honda">
-          <router-link to="/tabs/tab2">
+        <ion-button class="main-button" router-link="/tabs/tab2">
+          <button class="container btn" value="honda">
             <div class="image-container">
               <svg
                 class="brand-svg"
@@ -77,10 +77,10 @@
               <h1>Honda</h1>
               <h3 class="printNumber"></h3>
             </div>
-          </router-link>
-        </button>
-        <button class="container btn" value="dacia">
-          <router-link to="/tabs/tab2">
+          </button>
+        </ion-button>
+        <ion-button class="main-button" router-link="/tabs/tab2">
+          <button href="/tabs/tab2" class="container btn" value="dacia">
             <div class="image-container">
               <svg
                 xml:space="preserve"
@@ -121,10 +121,10 @@
               <h1>Dacia</h1>
               <h3 class="printNumber"></h3>
             </div>
-          </router-link>
-        </button>
-        <button class="container btn" value="toyota">
-          <router-link to="/tabs/tab2">
+          </button>
+        </ion-button>
+        <ion-button class="main-button" router-link="/tabs/tab2">
+          <button href="/tabs/tab2" class="container btn" value="toyota">
             <div class="image-container">
               <svg class="brand-svg" fill="#ffffff" viewBox="0 0 24 24">
                 <g stroke-width="0"></g>
@@ -140,9 +140,10 @@
               <h1>Toyota</h1>
               <h3 class="printNumber"></h3>
             </div>
-          </router-link>
-        </button></main
-    ></ion-content>
+          </button>
+        </ion-button>
+      </main>
+    </ion-content>
   </ion-page>
 </template>
 
@@ -150,14 +151,17 @@
 .fil0 {
   fill: white;
 }
+
 .fil1 {
   fill: white;
   fill-rule: nonzero;
 }
+
 .fil420 {
   fill: #ffffff;
   fill-rule: nonzero;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -175,6 +179,35 @@ main {
   text-decoration: none;
   width: 100%;
   height: 100%;
+  background: transparent;
+  --ripple-color: transparent;
+  --background-activated: transparent;
+  text-decoration: none;
+}
+
+ion-button {
+  --background: transparent;
+  --border-radius: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: 0em;
+  --padding-end: 0em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-button {
+  --box-shadow: none;
 }
 
 .container {
@@ -185,13 +218,7 @@ main {
   display: flex;
   flex-direction: row;
   background: transparent;
-  --ripple-color: transparent;
-  --background-activated: transparent;
   text-decoration: none;
-}
-
-.container:last-child {
-  margin-bottom: 1.8rem;
 }
 
 .image-container {
@@ -239,24 +266,62 @@ main {
 </style>
 
 <script>
-import { IonPage, IonContent } from "@ionic/vue";
+import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import { useRouter } from "vue-router";
+import jsonData from "@/components/json/cars.json";
+import { ref } from "vue";
 
 export default {
-  components: { IonPage, IonContent },
+  components: { IonPage, IonContent, IonButton, useRouter, ref },
 
-  setup() {
-    setTimeout(() => {
-      let allBtn = document.querySelectorAll(".btn");
-
-      allBtn.forEach((bt) => {
-        bt.addEventListener("click", (e) => {
-          localStorage.setItem("brandSel", bt.value);
-        });
-      });
-    }, 25);
+  data() {
+    return {
+      data: jsonData,
+    };
   },
 
   computed: {},
+
+  setup() {
+    setTimeout(() => {
+      let data = jsonData;
+
+      let obj = [];
+
+      data.forEach((item) => {
+        if (!obj[item.brand]) {
+          obj[item.brand] = 1;
+        } else {
+          obj[item.brand] += 1;
+        }
+      });
+
+      let buttons = document.querySelectorAll(".btn");
+      let arrBtn = Object.values(buttons);
+
+      let arr = arrBtn.map((x) => {
+        let values = x.getAttribute("value");
+        return values;
+      });
+
+      let printNumbers = document.querySelectorAll(".printNumber");
+      let arrNum = Object.values(printNumbers);
+
+      for (var i = 0; i < arr.length; i++) {
+        if (obj[arr[i]] == 1) {
+          arrNum[i].innerHTML = obj[arr[i]] + " Coche";
+        } else {
+          arrNum[i].innerHTML = obj[arr[i]] + " Coches";
+        }
+      }
+
+      buttons.forEach((bt) => {
+        bt.addEventListener("click", (e) => {
+          localStorage.setItem("brandSel", bt.value);
+        });
+      }, 5);
+    });
+  },
 
   methods: {},
 };

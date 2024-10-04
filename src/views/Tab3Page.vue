@@ -48,8 +48,8 @@
         </div>
       </div>
       <main>
-        <button class="container btnW" value="3m">
-          <router-link to="/tabs/tab4">
+        <ion-button class="main-button" router-link="/tabs/tab4">
+          <button class="container btnW" value="3m">
             <div class="image-container">
               <svg
                 class="brand-svg"
@@ -65,10 +65,10 @@
             <div class="text-container">
               <h2>3M</h2>
             </div>
-          </router-link>
-        </button>
-        <button class="container btnW" value="imageP">
-          <router-link to="/tabs/tab4">
+          </button>
+        </ion-button>
+        <ion-button class="main-button" router-link="/tabs/tab4">
+          <button class="container btnW" value="imageP">
             <div class="image-container">
               <svg
                 class="brand-svg"
@@ -100,10 +100,10 @@
             <div class="text-container">
               <h2>Arlon</h2>
             </div>
-          </router-link>
-        </button>
-        <button class="container btnW" value="orafol">
-          <router-link to="/tabs/tab4">
+          </button>
+        </ion-button>
+        <ion-button class="main-button" router-link="/tabs/tab4">
+          <button class="container btnW" value="orafol">
             <div class="image-container">
               <svg
                 class="brand-svg2"
@@ -215,10 +215,10 @@
             <div class="text-container">
               <h2>Orafol</h2>
             </div>
-          </router-link>
-        </button>
-        <button class="container btnW" value="averyD">
-          <router-link to="/tabs/tab4">
+          </button>
+        </ion-button>
+        <ion-button class="main-button" router-link="/tabs/tab4">
+          <button class="container btnW" value="averyD">
             <div class="image-container">
               <svg
                 class="brand-svg2"
@@ -245,8 +245,8 @@
               <h1>Avery</h1>
               <h3>Dennison</h3>
             </div>
-          </router-link>
-        </button>
+          </button>
+        </ion-button>
       </main>
     </ion-content>
   </ion-page>
@@ -300,6 +300,35 @@ main {
   text-decoration: none;
   width: 100%;
   height: 100%;
+  background: transparent;
+  --ripple-color: transparent;
+  --background-activated: transparent;
+  text-decoration: none;
+}
+
+ion-button {
+  --background: transparent;
+  --border-radius: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: 0em;
+  --padding-end: 0em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-button {
+  --box-shadow: none;
 }
 
 .container {
@@ -310,8 +339,6 @@ main {
   display: flex;
   flex-direction: row;
   background: transparent;
-  --ripple-color: transparent;
-  --background-activated: transparent;
   text-decoration: none;
 }
 
@@ -374,11 +401,12 @@ main {
 </style>
 
 <script>
-import { IonPage, IonContent } from "@ionic/vue";
+import { IonPage, IonContent, IonButton } from "@ionic/vue";
 import carlist from "@/components/carComponent.vue";
+import { useRouter } from "vue-router";
 
 export default {
-  components: { IonPage, IonContent, carlist },
+  components: { IonPage, IonContent, carlist, IonButton, useRouter },
 
   setup() {
     setTimeout(() => {

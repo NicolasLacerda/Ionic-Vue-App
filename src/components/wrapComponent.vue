@@ -1,8 +1,8 @@
 <template>
   <ul>
     <li class="container" v-for="item in filteredData" :key="item.brand">
-      <button class="wrapBtn" :value="item.model">
-        <router-link to="/tabs/tab5">
+      <ion-button class="main-button" router-link="/tabs/tab5">
+        <button class="wrapBtn" :value="item.model">
           <div class="image-container">
             <img
               class="wrap-image"
@@ -15,8 +15,8 @@
             <h3 class="wrap-model">{{ item.model }}</h3>
             <h3 class="hideVinils">{{ item.vinils }}</h3>
           </div>
-        </router-link>
-      </button>
+        </button>
+      </ion-button>
     </li>
   </ul>
 </template>
@@ -39,6 +39,35 @@ ul {
   text-decoration: none;
   width: 100%;
   height: 100%;
+  background: transparent;
+  --ripple-color: transparent;
+  --background-activated: transparent;
+  text-decoration: none;
+}
+
+ion-button {
+  --background: transparent;
+  --border-radius: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: 0em;
+  --padding-end: 0em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-button {
+  --box-shadow: none;
 }
 
 .container {
@@ -49,8 +78,6 @@ ul {
   display: flex;
   flex-direction: row;
   background: transparent;
-  --ripple-color: transparent;
-  --background-activated: transparent;
   text-decoration: none;
 }
 
@@ -124,12 +151,14 @@ ion-tab-button {
 </style>
 
 <script>
+import { IonButton } from "@ionic/vue";
 import jsonData from "./json/wrap.json";
+import { useRouter } from "vue-router";
 
 export default {
   name: "wraplist",
 
-  components: {},
+  components: { IonButton, useRouter },
 
   setup() {},
 

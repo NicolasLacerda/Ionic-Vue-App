@@ -1,8 +1,8 @@
 <template>
   <ul>
     <li class="container" v-for="item in filteredData" :key="item.brand">
-      <button class="carBtn" :value="item.url">
-        <router-link to="/tabs/tab3">
+      <ion-button class="main-button" router-link="/tabs/tab3">
+        <button class="carBtn" :value="item.url">
           <div class="image-container">
             <img
               class="car-image"
@@ -14,8 +14,8 @@
             <h1 class="car-name">{{ item.name }}</h1>
             <h3 class="car-year">{{ item.year }}</h3>
           </div>
-        </router-link>
-      </button>
+        </button>
+      </ion-button>
     </li>
   </ul>
 </template>
@@ -38,6 +38,35 @@ ul {
   text-decoration: none;
   width: 100%;
   height: 100%;
+  background: transparent;
+  --ripple-color: transparent;
+  --background-activated: transparent;
+  text-decoration: none;
+}
+
+ion-button {
+  --background: transparent;
+  --border-radius: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: 0em;
+  --padding-end: 0em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-button {
+  --box-shadow: none;
 }
 
 .container {
@@ -48,8 +77,6 @@ ul {
   display: flex;
   flex-direction: row;
   background: transparent;
-  --ripple-color: transparent;
-  --background-activated: transparent;
   text-decoration: none;
 }
 
@@ -62,11 +89,6 @@ button {
   height: 18vh;
   justify-content: center;
   align-items: center;
-}
-
-ion-tab-button {
-  display: flex;
-  flex-direction: row;
 }
 
 .image-container {
@@ -141,12 +163,14 @@ app-car {
 </style>
 
 <script>
-import jsonData from "../components/json/cars.json";
+import { IonButton } from "@ionic/vue";
+import jsonData from "./json/cars.json";
+import { useRouter } from "vue-router";
 
 export default {
   name: "carlist",
 
-  components: {},
+  components: { IonButton, useRouter },
 
   setup() {},
 

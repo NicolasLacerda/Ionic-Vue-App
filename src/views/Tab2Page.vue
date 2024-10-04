@@ -224,8 +224,8 @@ export default {
 
   methods: {
     clear: function () {
-      history.go(-1);
       localStorage.removeItem("brandSel");
+      history.go(-1);
     },
   },
 };

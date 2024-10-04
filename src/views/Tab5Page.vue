@@ -1,112 +1,3 @@
-<script setup lang="jsx">
-import { IonPage, IonContent } from "@ionic/vue";
-import * as THREE from "three";
-import $ from "jquery";
-import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
-
-let camera, scene, renderer, stats;
-
-init();
-
-function init() {
-  camera = new THREE.PerspectiveCamera(
-    55,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    15
-  );
-
-  camera.position.set(5, 0, 8);
-  camera.lookAt(0, 0, 0);
-
-  scene = new THREE.Scene();
-
-  // Lights
-
-  let spotLight = new THREE.SpotLight(0xffffff, 250);
-  spotLight.position.set(0, 10, 0);
-  spotLight.distance = 20;
-  spotLight.angle = 0.4;
-  spotLight.penumbra = 0.5;
-  spotLight.castShadow = true;
-  spotLight.shadow.mapSize.width = 1024;
-  spotLight.shadow.mapSize.height = 1024;
-  scene.add(spotLight);
-
-  let dirlight = new THREE.DirectionalLight(0xffffff, 2);
-  dirlight.position.set(5, 0, 0);
-  dirlight.castShadow = false;
-  scene.add(dirlight);
-
-  let dirlight2 = new THREE.DirectionalLight(0xffffff, 2);
-  dirlight2.position.set(-5, 0, 0);
-  dirlight2.castShadow = false;
-  scene.add(dirlight2);
-
-  let dirlight3 = new THREE.DirectionalLight(0xffffff, 2);
-  dirlight3.position.set(0, 0, 5);
-  dirlight3.castShadow = false;
-  scene.add(dirlight3);
-
-  let dirlight4 = new THREE.DirectionalLight(0xffffff, 2);
-  dirlight4.position.set(0, 0, -5);
-  dirlight4.castShadow = false;
-  scene.add(dirlight4);
-
-  //Model
-  let loader = new GLTFLoader();
-  let dloader = new DRACOLoader();
-  dloader.setDecoderPath("assets/draco/javascript/");
-  dloader.setDecoderConfig({ type: "js" });
-  loader.setDRACOLoader(dloader);
-  loader.load("assets/scenes/honda/fit/fit-2007.glb", (gltf) => {
-    scene.add(gltf.scene);
-    animate();
-  });
-
-  //Ground
-  const ground = new THREE.Mesh(
-    new THREE.PlaneGeometry(50, 50),
-    new THREE.MeshPhongMaterial({ color: 0x555555 })
-  );
-
-  ground.rotation.x = -Math.PI / 2;
-  ground.receiveShadow = true;
-  scene.add(ground);
-
-  // Renderer
-
-  renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(720, 1280);
-  renderer.setClearColor(0x000000);
-  renderer.shadowMap.enabled = true;
-
-  renderer.toneMapping = THREE.NeutralToneMapping;
-
-  // Controls
-
-  let controls = new OrbitControls(camera, renderer.domElement);
-  controls.target.set(0, 0.3, 0);
-  controls.maxPolarAngle = 1.4;
-  controls.enableDamping = false;
-  controls.enablePan = false;
-  controls.autoRotate = false;
-  controls.minDistance = 6;
-  controls.maxDistance = 12;
-  controls.update();
-}
-
-function animate() {
-  requestAnimationFrame(animate);
-  renderer.render(scene, camera);
-  $("#car").append(renderer.domElement);
-  $("canvas").css("width", "100vw");
-  $("canvas").css("height", "100vh");
-}
-</script>
-
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
@@ -130,8 +21,9 @@ function animate() {
                   opacity="1"
                   data-original="#49ade7"
                 ></path>
-              </g></svg
-          ></a>
+              </g>
+            </svg>
+          </a>
 
           <div id="vinil-brand"></div>
 
@@ -152,8 +44,9 @@ function animate() {
                   data-original="#000000"
                   class=""
                 ></path>
-              </g></svg
-          ></a>
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
       <main>
@@ -277,13 +170,16 @@ function animate() {
                         data-original="#000000"
                         class=""
                       ></path>
-                    </g></svg
-                ></span>
+                    </g>
+                  </svg>
+                </span>
               </span>
               <span id="close" class="close"></span>
             </div>
           </button>
         </div>
+
+        <
         <div class="menu-page">
           <div class="menu-page-inner">
             <div class="top-bar">
@@ -306,8 +202,9 @@ function animate() {
                         opacity="1"
                         data-original="#000000"
                       ></path>
-                    </g></svg
-                ></a>
+                    </g>
+                  </svg>
+                </a>
 
                 <h1>Detalhes</h1>
 
@@ -513,8 +410,9 @@ function animate() {
                             opacity="1"
                             data-original="#000000"
                           ></path>
-                        </g></svg
-                    ></a>
+                        </g>
+                      </svg>
+                    </a>
 
                     <h1>configurações</h1>
 
@@ -1070,3 +968,161 @@ main {
   border-radius: 20px;
 }
 </style>
+
+<script>
+import { IonPage, IonContent } from "@ionic/vue";
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
+
+export default {
+  components: {
+    IonPage,
+    IonContent,
+    THREE,
+    OrbitControls,
+    GLTFLoader,
+    DRACOLoader,
+  },
+
+  setup() {
+    setTimeout(() => {
+      let wlg, lg, othersColors, showingMenu, showingConfig;
+
+      showingMenu = false;
+      showingConfig = false;
+
+      wlg = localStorage.getItem("brandWrapSel");
+      lg = document.querySelector("#vinil-brand");
+      othersColors = document.querySelector(".other-colors");
+
+      if (wlg == "3m" || wlg == "imageP") {
+        lg[0].innerHTML =
+          '<img src="assets/img/wrapBrandLogos/' +
+          wlg +
+          '.png" style="width:70%" >';
+      } else {
+        lg.innerHTML =
+          '<img src="assets/img/wrapBrandLogos/' +
+          wlg +
+          '.png" style="width:55%" >';
+      }
+
+      othersColors.style.display = "none";
+    }, 5);
+
+    setTimeout(() => {
+      let camera, scene, renderer, car, canvas;
+
+      init();
+
+      function init() {
+        car = document.querySelector("#car");
+
+        camera = new THREE.PerspectiveCamera(
+          55,
+          window.innerWidth / window.innerHeight,
+          0.1,
+          15
+        );
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        camera.position.set(5, 0, 8);
+        camera.lookAt(0, 0, 0);
+
+        scene = new THREE.Scene();
+
+        // Lights
+
+        let spotLight = new THREE.SpotLight(0xffffff, 250);
+        spotLight.position.set(0, 10, 0);
+        spotLight.distance = 20;
+        spotLight.angle = 0.4;
+        spotLight.penumbra = 0.5;
+        spotLight.castShadow = true;
+        spotLight.shadow.mapSize.width = 1024;
+        spotLight.shadow.mapSize.height = 1024;
+        scene.add(spotLight);
+
+        let dirlight = new THREE.DirectionalLight(0xffffff, 2);
+        dirlight.position.set(5, 0, 0);
+        dirlight.castShadow = false;
+        scene.add(dirlight);
+
+        let dirlight2 = new THREE.DirectionalLight(0xffffff, 2);
+        dirlight2.position.set(-5, 0, 0);
+        dirlight2.castShadow = false;
+        scene.add(dirlight2);
+
+        let dirlight3 = new THREE.DirectionalLight(0xffffff, 2);
+        dirlight3.position.set(0, 0, 5);
+        dirlight3.castShadow = false;
+        scene.add(dirlight3);
+
+        let dirlight4 = new THREE.DirectionalLight(0xffffff, 2);
+        dirlight4.position.set(0, 0, -5);
+        dirlight4.castShadow = false;
+        scene.add(dirlight4);
+
+        //Ground
+        const ground = new THREE.Mesh(
+          new THREE.PlaneGeometry(50, 50),
+          new THREE.MeshPhongMaterial({ color: 0x555555 })
+        );
+
+        ground.rotation.x = -Math.PI / 2;
+        ground.receiveShadow = true;
+        scene.add(ground);
+
+        //Model
+        let loader = new GLTFLoader();
+        let dloader = new DRACOLoader();
+        dloader.setDecoderPath("assets/draco/javascript/");
+        dloader.setDecoderConfig({ type: "js" });
+        loader.setDRACOLoader(dloader);
+        loader.load("assets/scenes/honda/fit/fit-2007.glb", async (gltf) => {
+          const model = gltf.scene;
+
+          await renderer.compileAsync(model, camera, scene);
+
+          scene.add(model);
+          render();
+        });
+
+        // Renderer
+
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(720, 1280);
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1;
+
+        car = document.querySelector("#car");
+        car.appendChild(renderer.domElement);
+
+        canvas = document.querySelector("canvas");
+        canvas.style.width = "100vw";
+        canvas.style.height = "100vh";
+
+        // Controls
+
+        let controls = new OrbitControls(camera, renderer.domElement);
+        controls.target.set(0, 0.3, 0);
+        controls.maxPolarAngle = 1.4;
+        controls.enableDamping = false;
+        controls.enablePan = false;
+        controls.autoRotate = false;
+        controls.minDistance = 6;
+        controls.maxDistance = 12;
+        controls.update();
+      }
+
+      function render() {
+        requestAnimationFrame(render);
+        renderer.render(scene, camera);
+      }
+    }, 10);
+  },
+};
+</script>
