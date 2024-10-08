@@ -72,13 +72,28 @@ app-wrap {
 </style>
 
 <script>
-import { IonPage, IonContent } from "@ionic/vue";
+import { IonPage, IonContent, useBackButton, useIonRouter } from "@ionic/vue";
 import wraplist from "@/components/wrapComponent.vue";
 
 export default {
-  components: { IonPage, IonContent, wraplist },
+  components: { IonPage, IonContent, wraplist, useBackButton, useIonRouter },
 
   setup() {
+    let isCurrentView;
+
+    useBackButton(9999, (processNextHandler) => {
+      if (isCurrentView) {
+        history.go(-1);
+        localStorage.removeItem("brandWrapSel");
+        localStorage.removeItem("wrapTypeSel");
+        localStorage.removeItem("colorGroup");
+        localStorage.removeItem("color");
+        localStorage.removeItem("colorRetro");
+        localStorage.removeItem("colorRoof");
+      }
+      processNextHandler();
+    });
+
     setTimeout(() => {
       let allBtn = document.querySelectorAll(".wrapBtn");
 
@@ -101,6 +116,14 @@ export default {
         });
       });
     }, 75);
+  },
+
+  ionViewDidEnter() {
+    this.isCurrentView = true;
+  },
+
+  ionViewDidLeave() {
+    this.isCurrentView = false;
   },
 
   computed: {},

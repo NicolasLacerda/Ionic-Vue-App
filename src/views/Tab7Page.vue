@@ -188,7 +188,13 @@ main {
 </style>
 
 <script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import {
+  IonPage,
+  IonContent,
+  IonButton,
+  useBackButton,
+  useIonRouter,
+} from "@ionic/vue";
 import { useRouter } from "vue-router";
 
 export default {
@@ -197,9 +203,20 @@ export default {
     IonContent,
     IonButton,
     useRouter,
+    useBackButton,
+    useIonRouter,
   },
 
   setup() {
+    let isCurrentView;
+
+    useBackButton(9999, (processNextHandler) => {
+      if (isCurrentView) {
+        history.go(-1);
+      }
+      processNextHandler();
+    });
+
     setTimeout(() => {
       let b1, b2, b3;
 
@@ -245,6 +262,14 @@ export default {
         b1.style.border = "#49ade7 2px solid";
       }
     }, 5);
+  },
+
+  ionViewDidEnter() {
+    this.isCurrentView = true;
+  },
+
+  ionViewDidLeave() {
+    this.isCurrentView = false;
   },
 
   methods: {

@@ -401,14 +401,40 @@ ion-button {
 </style>
 
 <script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import {
+  IonPage,
+  IonContent,
+  IonButton,
+  useBackButton,
+  useIonRouter,
+} from "@ionic/vue";
 import carlist from "@/components/carComponent.vue";
 import { useRouter } from "vue-router";
 
 export default {
-  components: { IonPage, IonContent, carlist, IonButton, useRouter },
+  components: {
+    IonPage,
+    IonContent,
+    carlist,
+    IonButton,
+    useRouter,
+    useBackButton,
+    useIonRouter,
+  },
 
   setup() {
+    let isCurrentView;
+
+    useBackButton(9999, (processNextHandler) => {
+      if (isCurrentView) {
+        history.go(-1);
+        localStorage.removeItem("carUrl");
+        localStorage.removeItem("carName");
+        localStorage.removeItem("carYear");
+      }
+      processNextHandler();
+    });
+
     setTimeout(() => {
       const allBtnW = document.querySelectorAll(".btnW");
 
@@ -418,6 +444,14 @@ export default {
         });
       });
     }, 25);
+  },
+
+  ionViewDidEnter() {
+    this.isCurrentView = true;
+  },
+
+  ionViewDidLeave() {
+    this.isCurrentView = false;
   },
 
   computed: {},

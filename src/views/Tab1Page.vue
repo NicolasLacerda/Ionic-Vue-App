@@ -322,6 +322,14 @@ export default {
           localStorage.setItem("brandSel", bt.value);
         });
       }, 5);
+
+      if (!localStorage.getItem("visited")) {
+        localStorage.setItem("graphic", "medium");
+        localStorage.setItem("shadow", false);
+        localStorage.setItem("alias", true);
+        localStorage.setItem("model", "assets/scenes/");
+        localStorage.setItem("visited", true);
+      }
     });
   },
 

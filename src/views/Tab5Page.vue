@@ -590,7 +590,13 @@ ion-button {
 </style>
 
 <script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import {
+  IonPage,
+  IonContent,
+  IonButton,
+  useBackButton,
+  useIonRouter,
+} from "@ionic/vue";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -607,9 +613,24 @@ export default {
     DRACOLoader,
     IonButton,
     useRouter,
+    useBackButton,
+    useIonRouter,
   },
 
   setup() {
+    let camera,
+      scene,
+      renderer,
+      car,
+      canvas,
+      ren,
+      backBt,
+      shadow,
+      model,
+      alias,
+      shadowRaw,
+      aliasRaw;
+
     setTimeout(() => {
       let wlg, lg, othersColors;
 
@@ -784,20 +805,6 @@ export default {
 
     //Render
     setTimeout(() => {
-      let camera,
-        scene,
-        renderer,
-        car,
-        canvas,
-        ren,
-        backBt,
-        shadow,
-        model,
-        alias,
-        shadowRaw,
-        aliasRaw,
-        modelRaw;
-
       shadowRaw = localStorage.getItem("shadow");
       shadow = shadowRaw === "true";
       aliasRaw = localStorage.getItem("alias");
@@ -1196,6 +1203,25 @@ export default {
         scene = null;
       });
     }, 10);
+
+    let isCurrentView;
+
+    useBackButton(9999, (processNextHandler) => {
+      if (isCurrentView) {
+        history.go(-1);
+        cancelAnimationFrame(ren);
+        scene = null;
+      }
+      processNextHandler();
+    });
+  },
+
+  ionViewDidEnter() {
+    this.isCurrentView = true;
+  },
+
+  ionViewDidLeave() {
+    this.isCurrentView = false;
   },
 
   methods: {

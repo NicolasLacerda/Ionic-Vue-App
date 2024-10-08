@@ -375,7 +375,13 @@ main {
 </style>
 
 <script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import {
+  IonPage,
+  IonContent,
+  IonButton,
+  useBackButton,
+  useIonRouter,
+} from "@ionic/vue";
 import { useRouter } from "vue-router";
 import jsonData from "@/components/json/colorsName.json";
 import { ref } from "vue";
@@ -386,6 +392,8 @@ export default {
     IonContent,
     IonButton,
     useRouter,
+    useBackButton,
+    useIonRouter,
     ref,
   },
 
@@ -398,6 +406,15 @@ export default {
   computed: {},
 
   setup() {
+    let isCurrentView;
+
+    useBackButton(9999, (processNextHandler) => {
+      if (isCurrentView) {
+        history.back();
+      }
+      processNextHandler();
+    });
+
     setTimeout(() => {
       let cName, cYear, cImage, ciUrl, wBrand, wType;
 
@@ -502,6 +519,14 @@ export default {
         data[hoColor]
       }" class="presuposto" style="display: block; border-radius: 500px; background-color: #49ade7; font-size: 1rem;padding: 1rem; width: 70%; color: white; font-weight: 700; text-decoration: none;">Pedir presuposto</a>`;
     }, 5);
+  },
+
+  ionViewDidEnter() {
+    this.isCurrentView = true;
+  },
+
+  ionViewDidLeave() {
+    this.isCurrentView = false;
   },
 
   methods: {

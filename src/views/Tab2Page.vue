@@ -184,13 +184,29 @@ app-car {
 </style>
 
 <script>
-import { IonPage, IonContent } from "@ionic/vue";
+import { IonPage, IonContent, useBackButton, useIonRouter } from "@ionic/vue";
 import carlist from "@/components/carComponent.vue";
 
 export default {
-  components: { IonPage, IonContent, carlist },
+  components: {
+    IonPage,
+    IonContent,
+    useBackButton,
+    useIonRouter,
+    carlist,
+  },
 
   setup() {
+    let isCurrentView;
+
+    useBackButton(9999, (processNextHandler) => {
+      if (isCurrentView) {
+        history.back();
+        localStorage.removeItem("brandSel");
+      }
+      processNextHandler();
+    });
+
     setTimeout(() => {
       let allBtn = document.querySelectorAll(".carBtn");
 
@@ -218,6 +234,14 @@ export default {
         });
       });
     }, 25);
+  },
+
+  ionViewDidEnter() {
+    this.isCurrentView = true;
+  },
+
+  ionViewDidLeave() {
+    this.isCurrentView = false;
   },
 
   computed: {},
