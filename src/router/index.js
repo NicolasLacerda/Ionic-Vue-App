@@ -34,6 +34,14 @@ const routes = [
         path: "tab5",
         component: () => import("@/views/Tab5Page.vue"),
       },
+      {
+        path: "tab6",
+        component: () => import("@/views/Tab6Page.vue"),
+      },
+      {
+        path: "tab7",
+        component: () => import("@/views/Tab7Page.vue"),
+      },
     ],
   },
 ];

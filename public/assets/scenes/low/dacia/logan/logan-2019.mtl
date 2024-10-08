@@ -1,0 +1,85 @@
+# OBJ Material Export by Luxion KeyShot
+
+newmtl rear
+Kd 1 1 1
+
+newmtl roof
+Kd 1 1 1
+
+newmtl interior
+Kd 0 0 0
+
+newmtl interior_#1
+Kd 0 0 0
+
+newmtl Hard_Textured_Plastic_White_#2
+Kd 1 1 1
+
+newmtl Clear_Rough_Plastic_Black_#9
+Kd 0 0 0
+
+newmtl Clear_Rough_Plastic_Black_#9
+Kd 0 0 0
+
+newmtl Clear_Rough_Plastic_Black_#9
+Kd 0 0 0
+
+newmtl Clear_Rough_Plastic_Black_#9
+Kd 0 0 0
+
+newmtl Paint_Gloss_White_#2
+Kd 1 1 1
+
+newmtl Glass_Basic_Black_#1
+Kd 0.196078 0.196078 0.196078
+
+newmtl Clear_Rough_Plastic_Black_#1
+Kd 0 0 0
+
+newmtl Paint_Gloss_White_#2
+Kd 1 1 1
+
+newmtl hood
+Kd 1 1 1
+
+newmtl Clear_Rough_Plastic_Black_#9
+Kd 0 0 0
+
+newmtl Clear_Rough_Plastic_Black_#11
+Kd 0 0 0
+
+newmtl Aluminum_Polished_#10
+Kd 0.792157 0.819608 0.933333
+
+newmtl Aluminum_Polished_#9
+Kd 0.792157 0.819608 0.933333
+
+newmtl Clear_Rough_Plastic_Black_#1
+Kd 0 0 0
+
+newmtl exterior_#3
+Kd 0 0 0
+
+newmtl interior
+Kd 0 0 0
+
+newmtl interior
+Kd 0 0 0
+
+newmtl interior
+Kd 0 0 0
+
+newmtl interior
+Kd 0 0 0
+
+newmtl Paint_Gloss_White_#2
+Kd 1 1 1
+
+newmtl interior
+Kd 0 0 0
+
+newmtl exterior_#1
+Kd 0 0 0
+
+newmtl Paint_Metallic_Orange_peel_Rosewood_#1
+Kd 0.294118 0.0470588 0.0588235

@@ -84,10 +84,14 @@ export default {
 
       allBtn.forEach((bt) => {
         bt.addEventListener("click", (e) => {
-          localStorage.setItem(
-            "colorGroup",
-            bt.querySelectorAll(".hideVinils")[0].innerHTML
-          );
+          let f1, f2, f3, f4, f5;
+
+          f1 = bt.querySelector(".hideVinils").innerHTML;
+          f2 = f1.replace(/"/g, "");
+          f3 = f2.replace(/(\r\n|\n|\r)/gm, "");
+          f4 = f3.replace(/\s/g, "");
+          f5 = f4.replace(/[\[\]']+/g, "");
+          localStorage.setItem("colorGroup", f5);
         });
       });
 

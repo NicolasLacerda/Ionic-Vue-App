@@ -284,9 +284,11 @@ export default {
 
   setup() {
     setTimeout(() => {
-      let data = jsonData;
+      let data, obj, buttons, arrBtn, arr, printNumbers, arrNum;
 
-      let obj = [];
+      data = jsonData;
+
+      obj = [];
 
       data.forEach((item) => {
         if (!obj[item.brand]) {
@@ -296,22 +298,22 @@ export default {
         }
       });
 
-      let buttons = document.querySelectorAll(".btn");
-      let arrBtn = Object.values(buttons);
+      buttons = document.querySelectorAll(".btn");
+      arrBtn = Object.values(buttons);
 
-      let arr = arrBtn.map((x) => {
+      arr = arrBtn.map((x) => {
         let values = x.getAttribute("value");
         return values;
       });
 
-      let printNumbers = document.querySelectorAll(".printNumber");
-      let arrNum = Object.values(printNumbers);
+      printNumbers = document.querySelectorAll(".printNumber");
+      arrNum = Object.values(printNumbers);
 
       for (var i = 0; i < arr.length; i++) {
         if (obj[arr[i]] == 1) {
-          arrNum[i].innerHTML = obj[arr[i]] + " Coche";
+          arrNum[i].innerHTML = `${obj[arr[i]]} Coche`;
         } else {
-          arrNum[i].innerHTML = obj[arr[i]] + " Coches";
+          arrNum[i].innerHTML = `${obj[arr[i]]} Coches`;
         }
       }
 
