@@ -79,19 +79,23 @@ export default {
   components: { IonPage, IonContent, wraplist, useBackButton, useIonRouter },
 
   setup() {
-    let isCurrentView;
-
     useBackButton(9999, (processNextHandler) => {
-      if (isCurrentView) {
-        history.go(-1);
-        localStorage.removeItem("brandWrapSel");
-        localStorage.removeItem("wrapTypeSel");
-        localStorage.removeItem("colorGroup");
-        localStorage.removeItem("color");
-        localStorage.removeItem("colorRetro");
-        localStorage.removeItem("colorRoof");
-      }
-      processNextHandler();
+      setTimeout(() => {
+        let view = localStorage.getItem("view");
+        setTimeout(() => {
+          if (view == "true") {
+            localStorage.removeItem("brandWrapSel");
+            localStorage.removeItem("wrapTypeSel");
+            localStorage.removeItem("colorGroup");
+            localStorage.removeItem("color");
+            localStorage.removeItem("colorRetro");
+            localStorage.removeItem("colorRoof");
+            location.href = "/tabs/tab3";
+          } else {
+            processNextHandler();
+          }
+        }, 10);
+      }, 5);
     });
 
     setTimeout(() => {
@@ -119,24 +123,24 @@ export default {
   },
 
   ionViewDidEnter() {
-    this.isCurrentView = true;
+    localStorage.setItem("view", true);
   },
 
   ionViewDidLeave() {
-    this.isCurrentView = false;
+    localStorage.setItem("view", false);
   },
 
   computed: {},
 
   methods: {
     clear: function () {
-      history.go(-1);
       localStorage.removeItem("brandWrapSel");
       localStorage.removeItem("wrapTypeSel");
       localStorage.removeItem("colorGroup");
       localStorage.removeItem("color");
       localStorage.removeItem("colorRetro");
       localStorage.removeItem("colorRoof");
+      location.href = "/tabs/tab3";
     },
   },
 };

@@ -1204,29 +1204,41 @@ export default {
       });
     }, 10);
 
-    let isCurrentView;
-
     useBackButton(9999, (processNextHandler) => {
-      if (isCurrentView) {
-        history.go(-1);
-        cancelAnimationFrame(ren);
-        scene = null;
-      }
-      processNextHandler();
+      setTimeout(() => {
+        let view = localStorage.getItem("view");
+        setTimeout(() => {
+          if (view == "true") {
+            cancelAnimationFrame(ren);
+            scene = null;
+            localStorage.removeItem("reColor");
+            localStorage.removeItem("roColor");
+            localStorage.removeItem("bColor");
+            localStorage.removeItem("hoColor");
+            location.href = "/tabs/tab4";
+          } else {
+            processNextHandler();
+          }
+        }, 10);
+      }, 5);
     });
   },
 
   ionViewDidEnter() {
-    this.isCurrentView = true;
+    localStorage.setItem("view", true);
   },
 
   ionViewDidLeave() {
-    this.isCurrentView = false;
+    localStorage.setItem("view", false);
   },
 
   methods: {
     clear: function () {
-      history.back();
+      localStorage.removeItem("reColor");
+      localStorage.removeItem("roColor");
+      localStorage.removeItem("bColor");
+      localStorage.removeItem("hoColor");
+      location.href = "/tabs/tab4";
     },
   },
 };

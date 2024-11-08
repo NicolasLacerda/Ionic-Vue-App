@@ -208,13 +208,17 @@ export default {
   },
 
   setup() {
-    let isCurrentView;
-
     useBackButton(9999, (processNextHandler) => {
-      if (isCurrentView) {
-        history.go(-1);
-      }
-      processNextHandler();
+      setTimeout(() => {
+        let view = localStorage.getItem("view");
+        setTimeout(() => {
+          if (view == "true") {
+            history.back();
+          } else {
+            processNextHandler();
+          }
+        }, 10);
+      }, 5);
     });
 
     setTimeout(() => {
@@ -229,7 +233,7 @@ export default {
         localStorage.setItem("shadow", true);
         localStorage.setItem("alias", true);
         localStorage.setItem("model", "assets/scenes/");
-        location.reload();
+        location.href = "/tabs/tab5";
       });
 
       b2.addEventListener("click", (e) => {
@@ -237,7 +241,7 @@ export default {
         localStorage.setItem("shadow", false);
         localStorage.setItem("alias", true);
         localStorage.setItem("model", "assets/scenes/");
-        location.reload();
+        location.href = "/tabs/tab5";
       });
 
       b3.addEventListener("click", (e) => {
@@ -245,7 +249,7 @@ export default {
         localStorage.setItem("shadow", false);
         localStorage.setItem("alias", false);
         localStorage.setItem("model", "assets/scenes/low/");
-        location.reload();
+        location.href = "/tabs/tab5";
       });
 
       if (localStorage.getItem("graphic") == "medium") {
@@ -265,16 +269,16 @@ export default {
   },
 
   ionViewDidEnter() {
-    this.isCurrentView = true;
+    localStorage.setItem("view", true);
   },
 
   ionViewDidLeave() {
-    this.isCurrentView = false;
+    localStorage.setItem("view", false);
   },
 
   methods: {
     clear: function () {
-      history.go(-1);
+      history.back();
     },
   },
 };

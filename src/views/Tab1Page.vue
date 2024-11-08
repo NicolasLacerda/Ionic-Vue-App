@@ -262,17 +262,25 @@ ion-button {
   font-family: suse;
   font-weight: 700;
   font-size: 1.3rem;
+  color: black !important;
 }
 </style>
 
 <script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import { IonPage, IonContent, useBackButton, IonButton } from "@ionic/vue";
 import { useRouter } from "vue-router";
 import jsonData from "@/components/json/cars.json";
 import { ref } from "vue";
 
 export default {
-  components: { IonPage, IonContent, IonButton, useRouter, ref },
+  components: {
+    IonPage,
+    IonContent,
+    IonButton,
+    useBackButton,
+    useRouter,
+    ref,
+  },
 
   data() {
     return {
@@ -283,6 +291,18 @@ export default {
   computed: {},
 
   setup() {
+    useBackButton(9999, (processNextHandler) => {
+      setTimeout(() => {
+        let view = localStorage.getItem("view");
+        setTimeout(() => {
+          if (view == "true") {
+            App.exitApp();
+          } else {
+            processNextHandler();
+          }
+        }, 10);
+      }, 5);
+    });
     setTimeout(() => {
       let data, obj, buttons, arrBtn, arr, printNumbers, arrNum;
 
@@ -331,6 +351,14 @@ export default {
         localStorage.setItem("visited", true);
       }
     });
+  },
+
+  ionViewDidEnter() {
+    localStorage.setItem("view", true);
+  },
+
+  ionViewDidLeave() {
+    localStorage.setItem("view", false);
   },
 
   methods: {},

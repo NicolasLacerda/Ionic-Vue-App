@@ -423,16 +423,20 @@ export default {
   },
 
   setup() {
-    let isCurrentView;
-
     useBackButton(9999, (processNextHandler) => {
-      if (isCurrentView) {
-        history.go(-1);
-        localStorage.removeItem("carUrl");
-        localStorage.removeItem("carName");
-        localStorage.removeItem("carYear");
-      }
-      processNextHandler();
+      setTimeout(() => {
+        let view = localStorage.getItem("view");
+        setTimeout(() => {
+          if (view == "true") {
+            location.href = "/tabs/tab2";
+            localStorage.removeItem("carUrl");
+            localStorage.removeItem("carName");
+            localStorage.removeItem("carYear");
+          } else {
+            processNextHandler();
+          }
+        }, 10);
+      }, 5);
     });
 
     setTimeout(() => {
@@ -447,18 +451,18 @@ export default {
   },
 
   ionViewDidEnter() {
-    this.isCurrentView = true;
+    localStorage.setItem("view", true);
   },
 
   ionViewDidLeave() {
-    this.isCurrentView = false;
+    localStorage.setItem("view", false);
   },
 
   computed: {},
 
   methods: {
     clear: function () {
-      history.go(-1);
+      location.href = "/tabs/tab2";
       localStorage.removeItem("carUrl");
       localStorage.removeItem("carName");
       localStorage.removeItem("carYear");

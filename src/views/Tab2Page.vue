@@ -197,14 +197,18 @@ export default {
   },
 
   setup() {
-    let isCurrentView;
-
     useBackButton(9999, (processNextHandler) => {
-      if (isCurrentView) {
-        history.back();
-        localStorage.removeItem("brandSel");
-      }
-      processNextHandler();
+      setTimeout(() => {
+        let view = localStorage.getItem("view");
+        setTimeout(() => {
+          if (view == "true") {
+            localStorage.removeItem("brandSel");
+            location.href = "/tabs/tab1";
+          } else {
+            processNextHandler();
+          }
+        }, 10);
+      }, 5);
     });
 
     setTimeout(() => {
@@ -237,11 +241,11 @@ export default {
   },
 
   ionViewDidEnter() {
-    this.isCurrentView = true;
+    localStorage.setItem("view", true);
   },
 
   ionViewDidLeave() {
-    this.isCurrentView = false;
+    localStorage.setItem("view", false);
   },
 
   computed: {},
@@ -249,7 +253,7 @@ export default {
   methods: {
     clear: function () {
       localStorage.removeItem("brandSel");
-      history.back();
+      location.href = "/tabs/tab1";
     },
   },
 };

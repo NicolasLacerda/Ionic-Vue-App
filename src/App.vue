@@ -11,7 +11,12 @@ import { IonApp, IonRouterOutlet } from "@ionic/vue";
 <style>
 @font-face {
   font-family: suse;
-  src: url(assets/fonts/suse.ttf);
+  src: url(/assets/fonts/suse.ttf);
+}
+
+ion-button {
+  --ripple-color: transparent !important;
+  --color-hover: transparent !important;
 }
 
 h1 {
