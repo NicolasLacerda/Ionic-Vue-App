@@ -275,6 +275,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 1.2rem;
 }
 
 .top-bar-showroom {

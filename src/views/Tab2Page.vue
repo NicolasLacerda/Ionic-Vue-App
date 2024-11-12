@@ -73,6 +73,7 @@ main {
   margin-top: 5.6rem;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 1.2rem;
 }
 
 .container a {

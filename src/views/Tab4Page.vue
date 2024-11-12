@@ -64,6 +64,7 @@ main {
   width: 100%;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 app-wrap {

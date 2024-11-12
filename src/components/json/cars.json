@@ -1,12 +1,5 @@
 [
   {
-    "image": "countach-2022.png",
-    "brand": "lamborghini",
-    "name": "Countach",
-    "year": 2022,
-    "url": "lamborghini/countach/countach-2022"
-  },
-  {
     "image": "civic-2022.png",
     "brand": "honda",
     "name": "Civic",
@@ -70,18 +63,18 @@
     "url": "hyundai/tucson/tucson-2017"
   },
   {
-    "image": "ecosport-2017.png",
-    "brand": "seat",
-    "name": "Eco Sport",
-    "year": 2017,
-    "url": "ford/ecosport/duster-2010"
-  },
-  {
     "image": "tiguan-2016.png",
     "brand": "volkswagen",
     "name": "Tiguan",
     "year": 2016,
     "url": "volkswagen/tiguan/tiguan-2016"
+  },
+  {
+    "image": "amarok-2009.png",
+    "brand": "volkswagen",
+    "name": "Amarok",
+    "year": 2009,
+    "url": "volkswagen/amarok/amarok-2009"
   },
   {
     "image": "polo-2016.png",
@@ -96,6 +89,13 @@
     "name": "Jetta",
     "year": 2015,
     "url": "volkswagen/jetta/jetta-2015"
+  },
+  {
+    "image": "golf-2020.png",
+    "brand": "volkswagen",
+    "name": "Golf",
+    "year": 2020,
+    "url": "volkswagen/golf/golf-2020"
   },
   {
     "image": "corolla-2023.png",
@@ -131,5 +131,40 @@
     "name": "Yaris",
     "year": 2019,
     "url": "toyota/yaris/yaris-2019"
+  },
+  {
+    "image": "206-2009.png",
+    "brand": "peugeot",
+    "name": "206",
+    "year": 2009,
+    "url": "peugeot/206/206-2009"
+  },
+  {
+    "image": "207-2012.png",
+    "brand": "peugeot",
+    "name": "207",
+    "year": 2012,
+    "url": "peugeot/207/207-2012"
+  },
+  {
+    "image": "208-2020.png",
+    "brand": "peugeot",
+    "name": "208",
+    "year": 2020,
+    "url": "peugeot/208/208-2020"
+  },
+  {
+    "image": "2008-2020.png",
+    "brand": "peugeot",
+    "name": "2008",
+    "year": 2020,
+    "url": "peugeot/2008/2008-2020"
+  },
+  {
+    "image": "3008-2020.png",
+    "brand": "peugeot",
+    "name": "3008",
+    "year": 2020,
+    "url": "peugeot/3008/3008-2020"
   }
 ]
