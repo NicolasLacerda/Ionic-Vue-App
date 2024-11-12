@@ -17,6 +17,13 @@ import { IonApp, IonRouterOutlet } from "@ionic/vue";
 ion-button {
   --ripple-color: transparent !important;
   --color-hover: transparent !important;
+  --background-hover: transparent !important;
+}
+
+ion-button:active {
+  --ripple-color: transparent !important;
+  --color-hover: transparent !important;
+  --background-hover: transparent !important;
 }
 
 h1 {

@@ -232,24 +232,30 @@ export default {
         localStorage.setItem("graphic", "high");
         localStorage.setItem("shadow", true);
         localStorage.setItem("alias", true);
+        localStorage.setItem("renderH", 1280);
+        localStorage.setItem("renderW", 720);
         localStorage.setItem("model", "assets/scenes/");
-        location.href = "/tabs/tab5";
+        location.reload();
       });
 
       b2.addEventListener("click", (e) => {
         localStorage.setItem("graphic", "medium");
         localStorage.setItem("shadow", false);
         localStorage.setItem("alias", true);
+        localStorage.setItem("renderH", 1024);
+        localStorage.setItem("renderW", 768);
         localStorage.setItem("model", "assets/scenes/");
-        location.href = "/tabs/tab5";
+        location.reload();
       });
 
       b3.addEventListener("click", (e) => {
         localStorage.setItem("graphic", "low");
         localStorage.setItem("shadow", false);
         localStorage.setItem("alias", false);
+        localStorage.setItem("renderH", 800);
+        localStorage.setItem("renderW", 600);
         localStorage.setItem("model", "assets/scenes/low/");
-        location.href = "/tabs/tab5";
+        location.reload();
       });
 
       if (localStorage.getItem("graphic") == "medium") {

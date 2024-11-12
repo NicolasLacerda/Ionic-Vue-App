@@ -7,11 +7,32 @@
     "url": "lamborghini/countach/countach-2022"
   },
   {
+    "image": "civic-2022.png",
+    "brand": "honda",
+    "name": "Civic",
+    "year": 2022,
+    "url": "honda/civic/civic-2022"
+  },
+  {
     "image": "fit-2007.png",
     "brand": "honda",
     "name": "Honda Fit",
     "year": 2007,
     "url": "honda/fit/fit-2007"
+  },
+  {
+    "image": "crv-2007.png",
+    "brand": "honda",
+    "name": "CR-V",
+    "year": 2007,
+    "url": "honda/cr-v/crv-2007"
+  },
+  {
+    "image": "city-2017.png",
+    "brand": "honda",
+    "name": "City",
+    "year": 2017,
+    "url": "honda/city/city-2017"
   },
   {
     "image": "ecosport-2017.png",
@@ -35,11 +56,46 @@
     "url": "dacia/logan/logan-2019"
   },
   {
+    "image": "sandero-2023.png",
+    "brand": "dacia",
+    "name": "Sandero",
+    "year": 2023,
+    "url": "dacia/sandero/sandero-2023"
+  },
+  {
+    "image": "tucson-2017.png",
+    "brand": "hyundai",
+    "name": "Tucson",
+    "year": 2017,
+    "url": "hyundai/tucson/tucson-2017"
+  },
+  {
     "image": "ecosport-2017.png",
     "brand": "seat",
     "name": "Eco Sport",
     "year": 2017,
     "url": "ford/ecosport/duster-2010"
+  },
+  {
+    "image": "tiguan-2016.png",
+    "brand": "volkswagen",
+    "name": "Tiguan",
+    "year": 2016,
+    "url": "volkswagen/tiguan/tiguan-2016"
+  },
+  {
+    "image": "polo-2016.png",
+    "brand": "volkswagen",
+    "name": "Polo",
+    "year": 2016,
+    "url": "volkswagen/polo/polo-2016"
+  },
+  {
+    "image": "jetta-2015.png",
+    "brand": "volkswagen",
+    "name": "Jetta",
+    "year": 2015,
+    "url": "volkswagen/jetta/jetta-2015"
   },
   {
     "image": "corolla-2023.png",
@@ -61,6 +117,13 @@
     "name": "Rav4",
     "year": 2022,
     "url": "toyota/rav4/rav4-2022"
+  },
+  {
+    "image": "hilux-2016.png",
+    "brand": "toyota",
+    "name": "Hilux",
+    "year": 2016,
+    "url": "toyota/hilux/hilux-2016"
   },
   {
     "image": "yaris-2019.png",

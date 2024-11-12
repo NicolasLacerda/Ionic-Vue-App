@@ -629,7 +629,9 @@ export default {
       model,
       alias,
       shadowRaw,
-      aliasRaw;
+      aliasRaw,
+      renderH,
+      renderW;
 
     setTimeout(() => {
       let wlg, lg, othersColors;
@@ -810,6 +812,8 @@ export default {
       aliasRaw = localStorage.getItem("alias");
       alias = aliasRaw === "true";
       model = localStorage.getItem("model");
+      renderH = localStorage.getItem("renderH");
+      renderW = localStorage.getItem("renderW");
 
       camera = new THREE.PerspectiveCamera(
         55,
@@ -1167,7 +1171,7 @@ export default {
       // Renderer
 
       renderer = new THREE.WebGLRenderer({ antialias: alias });
-      renderer.setSize(720, 1280);
+      renderer.setSize(renderW, renderH);
       renderer.shadowMap.enabled = shadow;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
       renderer.toneMappingExposure = 1;
@@ -1230,6 +1234,8 @@ export default {
 
   ionViewDidLeave() {
     localStorage.setItem("view", false);
+    cancelAnimationFrame(ren);
+    scene = null;
   },
 
   methods: {
