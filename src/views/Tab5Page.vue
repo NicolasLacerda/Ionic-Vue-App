@@ -812,7 +812,6 @@ export default {
       shadow = shadowRaw === "true";
       aliasRaw = localStorage.getItem("alias");
       alias = aliasRaw === "true";
-      model = localStorage.getItem("model");
       renderH = localStorage.getItem("renderH");
       renderW = localStorage.getItem("renderW");
 
@@ -879,7 +878,7 @@ export default {
       dloader.setDecoderConfig({ type: "js" });
       loader.setDRACOLoader(dloader);
       loader.load(
-        `${localStorage.getItem("model")}${localStorage.getItem("carUrl")}.glb`,
+        `assets/scenes/${localStorage.getItem("carUrl")}.glb`,
         async (gltf) => {
           const model = gltf.scene;
 

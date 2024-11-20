@@ -7,11 +7,11 @@
     "url": "honda/civic/civic-2022"
   },
   {
-    "image": "fit-2007.png",
+    "image": "jazz-2007.png",
     "brand": "honda",
-    "name": "Honda Fit",
+    "name": "Honda Jazz",
     "year": 2007,
-    "url": "honda/fit/fit-2007"
+    "url": "honda/jazz/jazz-2007"
   },
   {
     "image": "crv-2007.png",
@@ -33,6 +33,13 @@
     "name": "Eco Sport",
     "year": 2017,
     "url": "ford/ecosport/ecosport-2017"
+  },
+  {
+    "image": "focus-2014.png",
+    "brand": "ford",
+    "name": "Focus",
+    "year": 2014,
+    "url": "ford/focus/focus-2014"
   },
   {
     "image": "duster-2019.png",
@@ -61,6 +68,27 @@
     "name": "Tucson",
     "year": 2017,
     "url": "hyundai/tucson/tucson-2017"
+  },
+  {
+    "image": "azera-2016.png",
+    "brand": "hyundai",
+    "name": "Azera",
+    "year": 2016,
+    "url": "hyundai/azera/azera-2016"
+  },
+  {
+    "image": "sonata-2016.png",
+    "brand": "hyundai",
+    "name": "Sonata",
+    "year": 2016,
+    "url": "hyundai/sonata/sonata-2016"
+  },
+  {
+    "image": "i30-2020.png",
+    "brand": "hyundai",
+    "name": "i30",
+    "year": 2020,
+    "url": "hyundai/i30/i30-2020"
   },
   {
     "image": "tiguan-2016.png",
@@ -166,5 +194,173 @@
     "name": "3008",
     "year": 2020,
     "url": "peugeot/3008/3008-2020"
+  },
+  {
+    "image": "tarraco-2019.png",
+    "brand": "seat",
+    "name": "Tarraco",
+    "year": 2019,
+    "url": "seat/tarraco/tarraco-2019"
+  },
+  {
+    "image": "ateca-2021.png",
+    "brand": "seat",
+    "name": "Ateca",
+    "year": 2021,
+    "url": "seat/ateca/ateca-2021"
+  },
+  {
+    "image": "leon-2020.png",
+    "brand": "seat",
+    "name": "Leon",
+    "year": 2020,
+    "url": "seat/leon/leon-2020"
+  },
+  {
+    "image": "ibiza-2020.png",
+    "brand": "seat",
+    "name": "Ibiza",
+    "year": 2020,
+    "url": "seat/ibiza/ibiza-2020"
+  },
+  {
+    "image": "qashqai-2018.png",
+    "brand": "nissan",
+    "name": "Qashqai",
+    "year": 2018,
+    "url": "nissan/qashqai/qashqai-2018"
+  },
+  {
+    "image": "350z-2009.png",
+    "brand": "nissan",
+    "name": "350z",
+    "year": 2009,
+    "url": "nissan/350z/350z-2009"
+  },
+  {
+    "image": "leaf-2022.png",
+    "brand": "nissan",
+    "name": "Leaf",
+    "year": 2022,
+    "url": "nissan/leaf/leaf-2022"
+  },
+  {
+    "image": "500-2018.png",
+    "brand": "fiat",
+    "name": "Fiat 500",
+    "year": 2018,
+    "url": "fiat/500/500-2018"
+  },
+  {
+    "image": "doblo-2006.png",
+    "brand": "fiat",
+    "name": "Dobló",
+    "year": 2006,
+    "url": "fiat/doblo/doblo-2006"
+  },
+  {
+    "image": "tipo-2016.png",
+    "brand": "fiat",
+    "name": "Tipo",
+    "year": 2006,
+    "url": "fiat/tipo/tipo-2016"
+  },
+  {
+    "image": "fiorino-2024.png",
+    "brand": "fiat",
+    "name": "Fiorino",
+    "year": 2024,
+    "url": "fiat/fiorino/fiorino-2024"
+  },
+  {
+    "image": "punto-2010.png",
+    "brand": "fiat",
+    "name": "Punto",
+    "year": 2010,
+    "url": "fiat/punto/punto-2010"
+  },
+  {
+    "image": "clio-2012.png",
+    "brand": "renault",
+    "name": "Clio",
+    "year": 2012,
+    "url": "renault/clio/clio-2012"
+  },
+  {
+    "image": "megane-2010.png",
+    "brand": "renault",
+    "name": "Megane",
+    "year": 2010,
+    "url": "renault/megane/megane-2010"
+  },
+  {
+    "image": "picanto-2014.png",
+    "brand": "kia",
+    "name": "Picanto",
+    "year": 2014,
+    "url": "kia/picanto/picanto-2014"
+  },
+  {
+    "image": "sportage-2014.png",
+    "brand": "kia",
+    "name": "SportAge",
+    "year": 2014,
+    "url": "kia/sportage/sportage-2014"
+  },
+  {
+    "image": "a1-2020.png",
+    "brand": "audi",
+    "name": "Audi A1",
+    "year": 2020,
+    "url": "audi/a1/a1-2020"
+  },
+  {
+    "image": "a3-2014.png",
+    "brand": "audi",
+    "name": "Audi A3",
+    "year": 2014,
+    "url": "audi/a3/a3-2014"
+  },
+  {
+    "image": "a4-2020.png",
+    "brand": "audi",
+    "name": "Audi A4",
+    "year": 2020,
+    "url": "audi/a4/a4-2020"
+  },
+  {
+    "image": "a5-2010.png",
+    "brand": "audi",
+    "name": "Audi A5",
+    "year": 2010,
+    "url": "audi/a5/a5-2010"
+  },
+  {
+    "image": "tt-2010.png",
+    "brand": "audi",
+    "name": "Audi TT",
+    "year": 2010,
+    "url": "audi/tt/tt-2010"
+  },
+  {
+    "image": "ami-2022.png",
+    "brand": "citroen",
+    "name": "Citroen Ami",
+    "year": 2022,
+    "url": "citroen/ami/ami-2022"
+  },
+  {
+    "image": "c5-2020.png",
+    "brand": "citroen",
+    "name": "Citroen C5",
+    "year": 2020,
+    "url": "citroen/c5/c5-2020"
+  },
+  {
+    "image": "astra-2000.png",
+    "brand": "opel",
+    "name": "Astra",
+    "year": 2000,
+    "url": "opel/astra/astra-2000"
   }
 ]

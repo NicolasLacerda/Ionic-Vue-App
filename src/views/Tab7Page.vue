@@ -234,7 +234,6 @@ export default {
         localStorage.setItem("alias", true);
         localStorage.setItem("renderH", 1280);
         localStorage.setItem("renderW", 720);
-        localStorage.setItem("model", "assets/scenes/");
         location.reload();
       });
 
@@ -244,7 +243,6 @@ export default {
         localStorage.setItem("alias", true);
         localStorage.setItem("renderH", 1024);
         localStorage.setItem("renderW", 768);
-        localStorage.setItem("model", "assets/scenes/");
         location.reload();
       });
 
@@ -254,7 +252,6 @@ export default {
         localStorage.setItem("alias", false);
         localStorage.setItem("renderH", 800);
         localStorage.setItem("renderW", 600);
-        localStorage.setItem("model", "assets/scenes/low/");
         location.reload();
       });
 
