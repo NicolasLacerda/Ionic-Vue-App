@@ -3,6 +3,27 @@
     <ion-content :fullscreen="true">
       <div class="top-bar">
         <div class="menu-title">
+          <a id="backBtn" v-on:click="clear"
+            ><svg
+              height="20px"
+              width="20px"
+              x="0"
+              y="0"
+              viewBox="0 0 64 64"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              fill-rule="evenodd"
+            >
+              <g>
+                <path
+                  d="M47.83 55.172 24.66 32 47.83 8.828c1.56-1.561 1.56-4.095 0-5.656s-4.1-1.561-5.66 0l-26 26a4.003 4.003 0 0 0 0 5.656l26 26c1.56 1.561 4.1 1.561 5.66 0s1.56-4.095 0-5.656z"
+                  fill="#ffffff"
+                  opacity="1"
+                  data-original="#000000"
+                ></path>
+              </g>
+            </svg>
+          </a>
           <h1>Marcas</h1>
           <svg
             x="0"
@@ -1145,6 +1166,11 @@ export default {
     localStorage.setItem("view", false);
   },
 
-  methods: {},
+  methods: {
+    clear: function () {
+      localStorage.removeItem("brandSel");
+      location.href = "/tabs/home";
+    },
+  },
 };
 </script>

@@ -4,7 +4,7 @@ import TabsPage from "../views/TabsPage.vue";
 const routes = [
   {
     path: "/",
-    redirect: "/tabs/tab1",
+    redirect: "/tabs/home",
   },
   {
     path: "/tabs/",
@@ -12,7 +12,11 @@ const routes = [
     children: [
       {
         path: "",
-        redirect: "/tabs/tab1",
+        redirect: "/tabs/home",
+      },
+      {
+        path: "home",
+        component: () => import("@/views/Home.vue"),
       },
       {
         path: "tab1",
@@ -45,6 +49,18 @@ const routes = [
       {
         path: "tab8",
         component: () => import("@/views/Tab8Page.vue"),
+      },
+      {
+        path: "account",
+        component: () => import("@/views/account.vue"),
+      },
+      {
+        path: "orders",
+        component: () => import("@/views/orders.vue"),
+      },
+      {
+        path: "appoint",
+        component: () => import("@/views/appoint.vue"),
       },
     ],
   },

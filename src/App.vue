@@ -30,16 +30,13 @@ h1 {
   margin: 0px;
 }
 
-.ion-page {
-  background: white;
-}
-
 .header-md {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 ion-content {
+  background-color: rgb(253, 253, 253) !important;
   --offset-bottom: auto !important;
   --overflow: hidden;
   overflow: auto;
@@ -61,7 +58,7 @@ ion-tab-button {
 }
 
 .top-bar {
-  background: #49ade7;
+  background: #0089c1;
   height: 4.4rem;
   width: 100%;
   border-radius: 0px 0px 30px 30px;
@@ -88,6 +85,7 @@ ion-tab-button {
   font-weight: 700;
   font-size: 1.9rem;
   color: white;
+  margin-top: 0.8rem;
 }
 
 .title-svg {

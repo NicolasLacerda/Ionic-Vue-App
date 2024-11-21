@@ -25,7 +25,7 @@
             </svg>
           </a>
 
-          <h1 class="title">configurações</h1>
+          <h1 class="title">Ajustes</h1>
 
           <div class="title-svg"></div>
         </div>
@@ -52,18 +52,19 @@
                   ></path>
                 </g>
               </svg>
-              <p class="quality">Qualidade Gráfica</p>
+              <p class="quality">Calidad gráfica</p>
             </div>
             <div class="buttons-container">
               <button class="btG b1" value="high">Alto</button>
-              <button class="btG b2" value="medium">Médio</button
-              ><button class="btG b3" value="low">Baixo</button>
+              <button class="btG b2" value="medium">Medio</button
+              ><button class="btG b3" value="low">Bajo</button>
             </div>
           </div>
           <p class="information">
-            O Anti Serrilhado quando está ligado pode gerar travamentos e
-            congelamentos. Caso tiver um aparelho mais fraco melhor deixa-lo
-            desligado.
+            El gráfico en la parte superior puede causar ralentizaciones en
+            algunos dispositivos, si tienes un dispositivo y estás
+            experimentando fallas y ralentizaciones, te recomendamos reducir la
+            calidad.
           </p>
         </div>
       </main>
