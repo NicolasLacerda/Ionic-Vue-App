@@ -17,15 +17,13 @@
               <g>
                 <path
                   d="M47.83 55.172 24.66 32 47.83 8.828c1.56-1.561 1.56-4.095 0-5.656s-4.1-1.561-5.66 0l-26 26a4.003 4.003 0 0 0 0 5.656l26 26c1.56 1.561 4.1 1.561 5.66 0s1.56-4.095 0-5.656z"
-                  fill="#49ade7"
+                  fill="#0089c1"
                   opacity="1"
-                  data-original="#49ade7"
+                  data-original="#0089c1"
                 ></path>
               </g>
             </svg>
           </a>
-
-          <div id="vinil-brand"></div>
 
           <ion-button class="showroom-menu" router-link="/tabs/tab7">
             <svg
@@ -39,7 +37,7 @@
               <g>
                 <path
                   d="m22.683 9.394-1.88-.239a9.45 9.45 0 0 0-.569-1.374l1.161-1.495a1.486 1.486 0 0 0-.122-1.979l-1.575-1.575a1.49 1.49 0 0 0-1.985-.127L16.22 3.766a9.416 9.416 0 0 0-1.375-.569l-.239-1.877A1.498 1.498 0 0 0 13.12 0h-2.24c-.757 0-1.396.567-1.486 1.317l-.239 1.88a9.307 9.307 0 0 0-1.375.569L6.286 2.605a1.488 1.488 0 0 0-1.979.122L2.732 4.301a1.49 1.49 0 0 0-.127 1.986l1.161 1.494a9.34 9.34 0 0 0-.569 1.374l-1.877.239C.567 9.484 0 10.123 0 10.88v2.24c0 .757.567 1.396 1.317 1.486l1.88.239c.155.477.346.937.569 1.374l-1.161 1.495a1.486 1.486 0 0 0 .122 1.979l1.575 1.575a1.492 1.492 0 0 0 1.985.126l1.494-1.161c.437.224.897.415 1.374.569l.239 1.876c.09.755.729 1.322 1.486 1.322h2.24c.757 0 1.396-.567 1.486-1.317l.239-1.88a9.45 9.45 0 0 0 1.374-.569l1.495 1.161c.605.47 1.459.415 1.979-.122l1.575-1.575a1.49 1.49 0 0 0 .127-1.985l-1.161-1.494c.224-.437.415-.897.569-1.374l1.876-.239a1.498 1.498 0 0 0 1.32-1.486v-2.24a1.496 1.496 0 0 0-1.316-1.486zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
-                  fill="#49ade7"
+                  fill="#0089c1"
                   opacity="1"
                   data-original="#000000"
                   class=""
@@ -62,15 +60,15 @@
                     <g></g>
                     <path
                       d="M5.867 15.467c-1.173 0-2.133 0.96-2.133 2.133s0.96 2.133 2.133 2.133 2.133-0.96 2.133-2.133-0.96-2.133-2.133-2.133zM5.867 18.667c-0.587 0-1.067-0.48-1.067-1.067s0.48-1.067 1.067-1.067c0.587 0 1.067 0.48 1.067 1.067s-0.48 1.067-1.067 1.067z"
-                      fill="#49ade7"
+                      fill="#0089c1"
                     ></path>
                     <path
                       d="M22.933 15.467c-1.173 0-2.133 0.96-2.133 2.133s0.96 2.133 2.133 2.133c1.173 0 2.133-0.96 2.133-2.133s-0.96-2.133-2.133-2.133zM22.933 18.667c-0.587 0-1.067-0.48-1.067-1.067s0.48-1.067 1.067-1.067c0.587 0 1.067 0.48 1.067 1.067s-0.48 1.067-1.067 1.067z"
-                      fill="#49ade7"
+                      fill="#0089c1"
                     ></path>
                     <path
                       d="M25.12 11.2l-0.907-4.267c-0.373-1.387-1.44-2.133-2.88-2.133h-13.867c-1.493 0-2.347 0.747-2.773 2.133l-0.96 4.267h-3.733v1.067h3.467v0.053c-1.653 0.107-2.933 1.493-2.933 3.2v7.413h1.6v1.6c0 1.493 1.173 2.667 2.667 2.667s2.667-1.173 2.667-2.667v-1.6h13.867v1.6c0 1.493 1.173 2.667 2.667 2.667s2.667-1.173 2.667-2.667v-1.6h1.6v-7.413c0-1.653-1.28-3.040-2.88-3.2v-0.053h3.413v-1.067h-3.68zM5.707 7.253c0.32-0.96 0.8-1.387 1.76-1.387h13.867c1.013 0 1.6 0.427 1.867 1.333l1.067 5.12h-19.733l1.173-5.067zM6.4 24.533c0 0.907-0.693 1.6-1.6 1.6s-1.6-0.693-1.6-1.6v-1.6h3.2v1.6zM25.6 24.533c0 0.907-0.693 1.6-1.6 1.6s-1.6-0.693-1.6-1.6v-1.6h3.2v1.6zM27.2 15.52v6.347h-25.6v-6.347c0-1.173 0.96-2.133 2.133-2.133h21.333c1.173 0 2.133 0.96 2.133 2.133z"
-                      fill="#49ade7"
+                      fill="#0089c1"
                     ></path>
                   </g>
                 </svg>
@@ -125,21 +123,21 @@
                   <g>
                     <path
                       d="m402.917 236.302-26.209-78.583a74.585 74.585 0 0 0-70.833-51.052H185.438c-58.708 0-110.75 35.229-132.542 89.74-6.792 16.938-10.229 34.781-10.229 53.031 0 27.146 22.083 49.229 49.229 49.229h266.063c26.125 0 47.375-21.25 47.375-47.375 0-5.042-.813-10.063-2.417-14.99zm-44.959 41.031H91.896c-15.375 0-27.896-12.51-27.896-27.896 0-15.521 2.917-30.698 8.688-45.104C91.25 157.969 135.5 128 185.438 128h120.438c23 0 43.313 14.656 50.583 36.469L382.646 243a26.473 26.473 0 0 1 1.354 8.292c0 14.354-11.687 26.041-26.042 26.041z"
-                      fill="#49ade7"
+                      fill="#0089c1"
                       opacity="1"
                       data-original="#000000"
                       class=""
                     ></path>
                     <path
                       d="M501.333 149.333H480c-5.604 0-10.25 4.323-10.646 9.906-.038.499-3.667 45.814-29.471 53.03l-22.695-68.04A117.187 117.187 0 0 0 305.875 64H185.438c-76.25 0-143.833 45.75-172.146 116.542C4.479 202.542 0 225.719 0 249.438c0 50.667 41.229 91.896 91.896 91.896H352c67.146 0 117.958 99.771 118.458 100.771a10.671 10.671 0 0 0 9.542 5.896h21.333A10.66 10.66 0 0 0 512 437.334V160a10.66 10.66 0 0 0-10.667-10.667zM91.896 319.998V320c-38.917 0-70.563-31.656-70.563-70.563 0-20.99 3.958-41.5 11.75-60.969 25.063-62.656 84.875-103.135 152.354-103.135h120.438a95.877 95.877 0 0 1 91.063 65.646l26.188 78.51c2.354 7.188 3.542 14.521 3.542 21.802 0 37.885-30.813 68.708-68.708 68.708H91.896zm398.771 106.669h-4.25c-9.926-17.978-42.359-71.186-88.84-94.923C427.316 317.024 448 286.657 448 251.292c0-6.15-.879-12.296-2.156-18.418 30.441-8.217 40.438-44.357 43.51-62.207h1.313v256z"
-                      fill="#49ade7"
+                      fill="#0089c1"
                       opacity="1"
                       data-original="#000000"
                       class=""
                     ></path>
                     <path
                       d="M188.876 173.792c-4.168-4.167-10.918-4.167-15.084 0l-64 64c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 0 0 7.542 3.125c2.729 0 5.458-1.042 7.542-3.125l64-64c4.167-4.167 4.167-10.917 0-15.083zM135.541 173.792c-4.167-4.167-10.917-4.167-15.083 0l-21.333 21.333c-4.167 4.167-4.167 10.917 0 15.083 2.083 2.083 4.813 3.125 7.542 3.125s5.458-1.041 7.541-3.125l21.333-21.333c4.167-4.167 4.167-10.917 0-15.083z"
-                      fill="#49ade7"
+                      fill="#0089c1"
                       opacity="1"
                       data-original="#000000"
                       class=""
@@ -161,7 +159,7 @@
                   >
                     <path
                       d="M56.453 16.947a8.939 8.939 0 0 0-5.021-7.09 49.711 49.711 0 0 0-42.867 0 8.936 8.936 0 0 0-5.018 7.087l-3.41 29.8A20.156 20.156 0 0 0 0 49.14V52a3 3 0 0 0 3 3h1.59a3.975 3.975 0 0 0 2.951-1.3C9.907 51.085 16.832 45 30 45s20.093 6.085 22.458 8.7A3.976 3.976 0 0 0 55.41 55H57a3 3 0 0 0 3-3v-2.86a19.979 19.979 0 0 0-.137-2.383ZM9.432 11.662a47.7 47.7 0 0 1 41.133 0 6.931 6.931 0 0 1 3.5 3.838A46.883 46.883 0 0 0 30 9a46.868 46.868 0 0 0-24.064 6.5 6.924 6.924 0 0 1 3.496-3.838ZM28 11.052c.658-.028 1.319-.052 2-.052s1.342.024 2 .052V38a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1ZM4.59 53H3a1 1 0 0 1-1-1v-2.86a18.241 18.241 0 0 1 .123-2.157l3.291-28.771a37.7 37.7 0 0 1 5.905-3.266C9.442 20.655 6.874 31.966 6.1 52.319l-.038.041A1.977 1.977 0 0 1 4.59 53Zm3.592-2.687C9.177 28.622 12.307 17.9 13.8 13.926A45.632 45.632 0 0 1 26 11.183V38a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3V11.183a45.632 45.632 0 0 1 12.2 2.743c1.491 3.975 4.621 14.695 5.616 36.386C48.17 47.2 41.188 43 30 43s-18.17 4.2-21.818 7.313ZM58 52a1 1 0 0 1-1 1h-1.59a1.974 1.974 0 0 1-1.468-.641l-.038-.041c-.778-20.353-3.346-31.663-5.223-37.372a37.851 37.851 0 0 1 5.905 3.265l3.291 28.778A18.064 18.064 0 0 1 58 49.14Z"
-                      fill="#49ade7"
+                      fill="#0089c1"
                       opacity="1"
                       data-original="#000000"
                       class=""
@@ -187,7 +185,7 @@
                     <g>
                       <path
                         d="M501.818 90.998a15.118 15.118 0 0 0-24.749-5.118l-77.994 77.994-41.932-9.016-9.015-41.932 77.994-77.995a15.125 15.125 0 0 0-5.118-24.75C367.457-11.053 306.542 1.538 265.818 42.26c-19.604 19.604-33.066 44.227-38.93 71.206a144.544 144.544 0 0 0 1.991 69.544L20.735 391.154C7.363 404.524 0 422.301 0 441.21s7.363 36.686 20.734 50.056C34.105 504.637 51.881 512 70.79 512c18.908 0 36.686-7.363 50.056-20.734L328.99 283.122a144.565 144.565 0 0 0 69.543 1.99c26.98-5.864 51.603-19.326 71.207-38.93 40.723-40.722 53.313-101.637 32.078-155.184z"
-                        fill="#49ade7"
+                        fill="#0089c1"
                         opacity="1"
                         data-original="#000000"
                         class=""
@@ -215,7 +213,7 @@
             >
               <path
                 d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
-                fill="#49ade7"
+                fill="#0089c1"
                 opacity="1"
                 data-original="#000000"
                 class=""
@@ -229,7 +227,7 @@
             <div class="colors"></div>
             <button id="upBtn">
               <svg
-                fill="#49ade7"
+                fill="#0089c1"
                 class="arrowUp"
                 version="1.1"
                 id="Layer_1"
@@ -262,7 +260,12 @@
 
 <style scoped>
 .fil12 {
-  fill: #49ade7;
+  fill: #0089c1;
+}
+
+.ion-page {
+  height: 100vh;
+  overflow: hidden;
 }
 
 main {
@@ -429,7 +432,7 @@ ion-button {
 
 .active-btn {
   background-color: #f3f3f3 !important;
-  border: 3px solid #49ade7;
+  border: 3px solid #0089c1;
 }
 
 .wrapper {
@@ -451,7 +454,7 @@ ion-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #49ade7;
+  color: #0089c1;
   transform: rotate(-90deg);
   cursor: pointer;
 }
@@ -470,7 +473,7 @@ ion-button {
   &::after {
     content: "";
     position: absolute;
-    background: #49ade7;
+    background: #0089c1;
     width: 4px;
     height: 1.5rem;
     top: 1.6rem;
@@ -576,6 +579,7 @@ ion-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
 }
 
 .colors2 {
@@ -587,6 +591,7 @@ ion-button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 </style>
 
@@ -635,17 +640,7 @@ export default {
       renderW;
 
     setTimeout(() => {
-      let wlg, lg, othersColors;
-
-      //show wrap brand logo
-      wlg = localStorage.getItem("brandWrapSel");
-      lg = document.querySelector("#vinil-brand");
-
-      if (wlg == "3m" || wlg == "imageP") {
-        lg.innerHTML = `<img src="assets/img/wrapBrandLogos/${wlg}.png" style="width:70%" >`;
-      } else {
-        lg.innerHTML = `<img src="assets/img/wrapBrandLogos/${wlg}.png" style="width:55%" >`;
-      }
+      let othersColors;
 
       othersColors = document.querySelector(".other-colors");
       othersColors.style.display = "none";
@@ -662,7 +657,7 @@ export default {
       for (let i = 0; i < vinils.length; i++) {
         if (i <= 4) {
           mainColors.innerHTML += `<button class="itemBo" value=${vinil[i]} style="width:2.3rem; height:2.3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
-        } else if (i > 4 && i < 25) {
+        } else if (i > 4 && i < vinil.length) {
           hideColors.innerHTML += `<button class="itemBo" value=${vinil[i]} style="width:3rem; height:3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
         }
       }
@@ -724,7 +719,7 @@ export default {
         for (let i = 0; i < vinils.length; i++) {
           if (i <= 4) {
             mainColors.innerHTML += `<button class="itemBo" value=${vinil[i]} style="width:2.3rem; height:2.3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
-          } else if (i > 4 && i < 25) {
+          } else if (i > 4 && i < vinil.length) {
             hideColors.innerHTML += `<button class="itemBo" value=${vinil[i]} style="width:3rem; height:3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
           }
         }
@@ -749,7 +744,7 @@ export default {
         for (let i = 0; i < vinils.length; i++) {
           if (i <= 4) {
             mainColors.innerHTML += `<button class="itemRo" value=${vinil[i]} style="width:2.3rem; height:2.3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
-          } else if (i > 4 && i < 25) {
+          } else if (i > 4 && i < vinil.length) {
             hideColors.innerHTML += `<button class="itemRo" value=${vinil[i]} style="width:3rem; height:3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
           }
         }
@@ -774,7 +769,7 @@ export default {
         for (let i = 0; i < vinils.length; i++) {
           if (i <= 4) {
             mainColors.innerHTML += `<button class="itemRe" value=${vinil[i]} style="width:2.3rem; height:2.3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
-          } else if (i > 4 && i < 25) {
+          } else if (i > 4 && i < vinil.length) {
             hideColors.innerHTML += `<button class="itemRe" value=${vinil[i]} style="width:3rem; height:3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
           }
         }
@@ -799,7 +794,7 @@ export default {
         for (let i = 0; i < vinils.length; i++) {
           if (i <= 4) {
             mainColors.innerHTML += `<button class="itemHo" value=${vinil[i]} style="width:2.3rem; height:2.3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
-          } else if (i > 4 && i < 25) {
+          } else if (i > 4 && i < vinil.length) {
             hideColors.innerHTML += `<button class="itemHo" value=${vinil[i]} style="width:3rem; height:3rem; border-radius: 10px; background: #${vinil[i]}" ></button>`;
           }
         }
@@ -914,7 +909,7 @@ export default {
                   ct.addEventListener("click", function (e) {
                     cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                    this.style.border = "3px solid #49ade7";
+                    this.style.border = "3px solid #0089c1";
 
                     wrap.material.color.setHex(
                       "0x" + this.getAttribute("value")
@@ -934,7 +929,7 @@ export default {
                   ct.addEventListener("click", function (e) {
                     cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                    this.style.border = "3px solid #49ade7";
+                    this.style.border = "3px solid #0089c1";
 
                     wrap.material.color.setHex(
                       "0x" + this.getAttribute("value")
@@ -954,7 +949,7 @@ export default {
                   ct.addEventListener("click", function (e) {
                     cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                    this.style.border = "3px solid #49ade7";
+                    this.style.border = "3px solid #0089c1";
 
                     wrap.material.color.setHex(
                       "0x" + this.getAttribute("value")
@@ -974,7 +969,7 @@ export default {
                   ct.addEventListener("click", function (e) {
                     cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                    this.style.border = "3px solid #49ade7";
+                    this.style.border = "3px solid #0089c1";
 
                     wrap.material.color.setHex(
                       "0x" + this.getAttribute("value")
@@ -996,7 +991,7 @@ export default {
                       ct.addEventListener("click", function (e) {
                         cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                        this.style.border = "3px solid #49ade7";
+                        this.style.border = "3px solid #0089c1";
 
                         wrap.material.color.setHex(
                           "0x" + this.getAttribute("value")
@@ -1018,7 +1013,7 @@ export default {
                       ct.addEventListener("click", function (e) {
                         cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                        this.style.border = "3px solid #49ade7";
+                        this.style.border = "3px solid #0089c1";
 
                         wrap.material.color.setHex(
                           "0x" + this.getAttribute("value")
@@ -1040,7 +1035,7 @@ export default {
                       ct.addEventListener("click", function (e) {
                         cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                        this.style.border = "3px solid #49ade7";
+                        this.style.border = "3px solid #0089c1";
 
                         wrap.material.color.setHex(
                           "0x" + this.getAttribute("value")
@@ -1062,7 +1057,7 @@ export default {
                       ct.addEventListener("click", function (e) {
                         cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                        this.style.border = "3px solid #49ade7";
+                        this.style.border = "3px solid #0089c1";
 
                         wrap.material.color.setHex(
                           "0x" + this.getAttribute("value")
@@ -1089,7 +1084,7 @@ export default {
                       ct.addEventListener("click", function (e) {
                         cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                        this.style.border = "3px solid #49ade7";
+                        this.style.border = "3px solid #0089c1";
 
                         wrap.material.color.setHex(
                           "0x" + this.getAttribute("value")
@@ -1116,7 +1111,7 @@ export default {
                       ct.addEventListener("click", function (e) {
                         cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                        this.style.border = "3px solid #49ade7";
+                        this.style.border = "3px solid #0089c1";
 
                         wrap.material.color.setHex(
                           "0x" + this.getAttribute("value")
@@ -1143,7 +1138,7 @@ export default {
                       ct.addEventListener("click", function (e) {
                         cItem.forEach((ci) => (ci.style.border = "0px"));
 
-                        this.style.border = "3px solid #49ade7";
+                        this.style.border = "3px solid #0089c1";
 
                         wrap.material.color.setHex(
                           "0x" + this.getAttribute("value")

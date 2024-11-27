@@ -46,22 +46,6 @@ const routes = [
         path: "tab7",
         component: () => import("@/views/Tab7Page.vue"),
       },
-      {
-        path: "tab8",
-        component: () => import("@/views/Tab8Page.vue"),
-      },
-      {
-        path: "account",
-        component: () => import("@/views/account.vue"),
-      },
-      {
-        path: "orders",
-        component: () => import("@/views/orders.vue"),
-      },
-      {
-        path: "appoint",
-        component: () => import("@/views/appoint.vue"),
-      },
     ],
   },
 ];

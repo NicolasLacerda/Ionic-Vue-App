@@ -68,7 +68,34 @@
           </button>
         </ion-button>
         <ion-button class="main-button" router-link="/tabs/tab4">
-          <button class="container btnW" value="imageP">
+          <button class="container btnW" value="apa">
+            <div class="image-container">
+              <svg
+                style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                "
+                class="brand-svg"
+                viewBox="0 0 672.42 714.69"
+              >
+                <g>
+                  <path
+                    class="fil0"
+                    d="M368.33 0l184.16 136.49c60.46,41.51 36.47,104.81 -46.34,183.29 104.12,33.51 190.38,80.4 160.16,174.06l-70.35 220.85 -227.63 0 -227.64 0 -70.35 -220.85 -70.34 -220.85 184.16 -136.5 184.17 -136.49zm70.28 418.39l-61.32 -170.06 -65.26 170.06 126.58 0zm-89.96 -227.22l61.88 0 146.67 385.03 -60 0 -40.94 -115.31 -159.91 0 -43.66 115.31 -56.15 0 152.11 -385.03z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="text-container">
+              <h2>Apa</h2>
+            </div>
+          </button>
+        </ion-button>
+        <ion-button class="main-button" router-link="/tabs/tab4">
+          <button class="container btnW" value="arlon">
             <div class="image-container">
               <svg
                 class="brand-svg"
@@ -260,22 +287,22 @@
   fill: white;
 }
 .fil1 {
-  fill: #49ade7;
+  fill: #0089c1;
 }
 .fil5 {
-  fill: #49ade7;
+  fill: #0089c1;
 }
 .fil4 {
-  fill: #49ade7;
+  fill: #0089c1;
 }
 .fil7 {
-  fill: #49ade7;
+  fill: #0089c1;
 }
 .fil3 {
-  fill: #49ade7;
+  fill: #0089c1;
 }
 .fil6 {
-  fill: #49ade7;
+  fill: #0089c1;
 }
 .fil2 {
   fill: white;
@@ -292,6 +319,7 @@ main {
   width: 100%;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .container a {
@@ -349,7 +377,7 @@ ion-button {
   width: 18vh;
   height: 100%;
   border-radius: 40px;
-  background-color: #49ade7;
+  background-color: #0089c1;
 }
 
 .image-container .brand-svg {
@@ -378,7 +406,7 @@ ion-button {
   font-family: suse;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #49ade7;
+  color: #0089c1;
 }
 
 .text-container h2 {

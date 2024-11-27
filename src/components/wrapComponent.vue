@@ -104,7 +104,7 @@ ion-tab-button {
   width: 18vh;
   height: 100%;
   border-radius: 40px;
-  background-color: #49ade7;
+  background-color: #0089c1;
 }
 
 .image-container .wrap-image {
@@ -129,8 +129,9 @@ ion-tab-button {
   font-family: suse;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #49ade7;
+  color: #0089c1;
   text-transform: capitalize;
+  text-align: start;
 }
 
 .text-container h1 {

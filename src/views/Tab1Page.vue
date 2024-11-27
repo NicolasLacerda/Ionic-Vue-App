@@ -337,7 +337,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                   id="Combined-Shape"
                 />
@@ -347,7 +347,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                   id="path75"
                 />
@@ -358,7 +358,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -367,7 +367,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                   id="path81"
                 />
@@ -378,7 +378,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -388,7 +388,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -398,7 +398,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -408,7 +408,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -418,7 +418,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -428,7 +428,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -438,7 +438,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -448,7 +448,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -458,7 +458,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -468,7 +468,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -478,7 +478,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -488,7 +488,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -498,7 +498,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -508,7 +508,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -518,7 +518,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
                 <path
@@ -528,7 +528,7 @@
                     fill-rule: evenodd;
                     stroke: none;
                     stroke-width: 5.336;
-                    fill: #49ade7;
+                    fill: #0089c1;
                   "
                 />
               </svg>
@@ -806,7 +806,7 @@
                               >
                                 <path
                                   id="path21"
-                                  style="fill: #49ade7"
+                                  style="fill: #0089c1"
                                   d="m 42.203702,26.5 c 0,8.678608 -7.025096,15.703704 -15.703702,15.703704 L 26.5,26.5 l 15.703702,0 z M 26.5,10.796296 26.5,26.5 l -15.703702,0 c 0,-8.678608 7.025095,-15.703704 15.703702,-15.703704 z"
                                 />
                               </g>
@@ -881,39 +881,38 @@
         </ion-button>
         -->
       </main>
-      <ion-button class="help-btn" router-link="/tabs/tab8">
-        <button href="/tabs/tab8">
-          <svg
-            x="0"
-            y="0"
-            viewBox="0 0 24 24"
-            style="enable-background: new 0 0 512 512"
-            xml:space="preserve"
-            class="help-icon"
-          >
-            <g>
-              <g fill="#000">
-                <path
-                  d="M7.25 8A.75.75 0 0 1 8 7.25h4a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 8zM7.25 12a.75.75 0 0 1 .75-.75h8a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75z"
-                  fill="#ffffff"
-                  opacity="1"
-                  data-original="#000000"
-                  class=""
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M9.966 1.25h4.068c1.371 0 2.447 0 3.311.07.88.073 1.607.221 2.265.557a5.75 5.75 0 0 1 2.513 2.513c.336.658.484 1.385.556 2.265.071.864.071 1.94.071 3.311v1.365c0 1.549 0 2.493-.232 3.287a5.75 5.75 0 0 1-3.9 3.9c-.794.232-1.738.232-3.287.232h-.756a4.25 4.25 0 0 0-2.42.776l-.05.035-2.61 1.865C7.99 22.5 6.012 20.948 6.7 19.232a.351.351 0 0 0-.327-.482h-.601a4.522 4.522 0 0 1-4.522-4.522V9.966c0-1.371 0-2.447.07-3.311.073-.88.221-1.607.557-2.265A5.75 5.75 0 0 1 4.39 1.877c.658-.336 1.385-.484 2.265-.556.864-.071 1.94-.071 3.311-.071zM6.777 2.816c-.787.064-1.295.188-1.706.397a4.25 4.25 0 0 0-1.858 1.858c-.21.411-.333.919-.397 1.706-.065.796-.066 1.81-.066 3.223v4.228a3.022 3.022 0 0 0 3.022 3.022h.601a1.851 1.851 0 0 1 1.72 2.539c-.131.326.244.62.53.416L11.29 18.3a5.75 5.75 0 0 1 3.276-1.05H15.184c1.742 0 2.452-.008 3.012-.172a4.25 4.25 0 0 0 2.882-2.882c.164-.56.172-1.27.172-3.012V10c0-1.413 0-2.427-.066-3.223-.064-.787-.188-1.295-.397-1.706a4.25 4.25 0 0 0-1.857-1.858c-.412-.21-.92-.333-1.707-.397-.796-.065-1.81-.066-3.223-.066h-4c-1.413 0-2.427 0-3.223.066z"
-                  clip-rule="evenodd"
-                  fill="#ffffff"
-                  opacity="1"
-                  data-original="#000000"
-                  class=""
-                ></path>
-              </g>
+
+      <button class="help-btn" v-on:click="help">
+        <svg
+          x="0"
+          y="0"
+          viewBox="0 0 24 24"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+          class="help-icon"
+        >
+          <g>
+            <g fill="#000">
+              <path
+                d="M7.25 8A.75.75 0 0 1 8 7.25h4a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 8zM7.25 12a.75.75 0 0 1 .75-.75h8a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75z"
+                fill="#ffffff"
+                opacity="1"
+                data-original="#000000"
+                class=""
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M9.966 1.25h4.068c1.371 0 2.447 0 3.311.07.88.073 1.607.221 2.265.557a5.75 5.75 0 0 1 2.513 2.513c.336.658.484 1.385.556 2.265.071.864.071 1.94.071 3.311v1.365c0 1.549 0 2.493-.232 3.287a5.75 5.75 0 0 1-3.9 3.9c-.794.232-1.738.232-3.287.232h-.756a4.25 4.25 0 0 0-2.42.776l-.05.035-2.61 1.865C7.99 22.5 6.012 20.948 6.7 19.232a.351.351 0 0 0-.327-.482h-.601a4.522 4.522 0 0 1-4.522-4.522V9.966c0-1.371 0-2.447.07-3.311.073-.88.221-1.607.557-2.265A5.75 5.75 0 0 1 4.39 1.877c.658-.336 1.385-.484 2.265-.556.864-.071 1.94-.071 3.311-.071zM6.777 2.816c-.787.064-1.295.188-1.706.397a4.25 4.25 0 0 0-1.858 1.858c-.21.411-.333.919-.397 1.706-.065.796-.066 1.81-.066 3.223v4.228a3.022 3.022 0 0 0 3.022 3.022h.601a1.851 1.851 0 0 1 1.72 2.539c-.131.326.244.62.53.416L11.29 18.3a5.75 5.75 0 0 1 3.276-1.05H15.184c1.742 0 2.452-.008 3.012-.172a4.25 4.25 0 0 0 2.882-2.882c.164-.56.172-1.27.172-3.012V10c0-1.413 0-2.427-.066-3.223-.064-.787-.188-1.295-.397-1.706a4.25 4.25 0 0 0-1.857-1.858c-.412-.21-.92-.333-1.707-.397-.796-.065-1.81-.066-3.223-.066h-4c-1.413 0-2.427 0-3.223.066z"
+                clip-rule="evenodd"
+                fill="#ffffff"
+                opacity="1"
+                data-original="#000000"
+                class=""
+              ></path>
             </g>
-          </svg>
-        </button>
-      </ion-button>
+          </g>
+        </svg>
+      </button>
     </ion-content>
   </ion-page>
 </template>
@@ -929,15 +928,7 @@
   justify-content: center;
   align-items: center;
   --box-shadow: none;
-}
-
-.help-btn button {
-  width: 4rem;
-  height: 4rem;
-  background-color: #49ade7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #0089c1;
   border-radius: 50px;
 }
 
@@ -1027,7 +1018,7 @@ ion-button {
   width: 18vh;
   height: 100%;
   border-radius: 40px;
-  background-color: #49ade7;
+  background-color: #0089c1;
 }
 
 .image-container .brand-svg {
@@ -1053,7 +1044,7 @@ ion-button {
   font-weight: 700;
   font-size: 1.7rem;
   text-wrap: wrap;
-  color: #49ade7;
+  color: #0089c1;
   text-align: start;
 }
 
@@ -1073,6 +1064,10 @@ import { IonPage, IonContent, useBackButton, IonButton } from "@ionic/vue";
 import { useRouter } from "vue-router";
 import jsonData from "@/components/json/cars.json";
 import { ref } from "vue";
+import { InAppBrowser } from "@awesome-cordova-plugins/in-app-browser";
+
+const settings =
+  "presentationstyle=formsheet,toolbarposition=top,fullscreen=no,hideurlbar=yes,toolbarcolor=#0089c1,closebuttoncolor=#ffffff,hidenavigationbuttons=yes,hardwareback=yes,lefttoright=yes,zoom=no";
 
 export default {
   components: {
@@ -1098,7 +1093,8 @@ export default {
         let view = localStorage.getItem("view");
         setTimeout(() => {
           if (view == "true") {
-            App.exitApp();
+            localStorage.removeItem("brandSel");
+            location.href = "/tabs/home";
           } else {
             processNextHandler();
           }
@@ -1170,6 +1166,13 @@ export default {
     clear: function () {
       localStorage.removeItem("brandSel");
       location.href = "/tabs/home";
+    },
+    help: function () {
+      InAppBrowser.create(
+        "https://brazwrap.es/ayudanos-a-mejorar/",
+        "_self",
+        settings
+      );
     },
   },
 };

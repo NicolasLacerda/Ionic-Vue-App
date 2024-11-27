@@ -72,137 +72,75 @@
             <h1>Especialistas en Rotulación de vehículos</h1>
             <video autoplay loop muted plays-inline class="bg-video">
               <source
-                src="/public/assets/img/home-video.mp4"
-                type="video/mp4"
+                src="/public/assets/img/home-video.webm"
+                type="video/webm"
               />
             </video>
           </div>
           <div class="mini-block-ct">
-            <ion-button class="mini-block" router-link="/tabs/home">
-              <button href="/tabs/home">
-                <div class="square">
-                  <svg
-                    x="0"
-                    y="0"
-                    viewBox="0 0 24 24"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                    class="nav-ico"
-                  >
-                    <g
-                      transform="matrix(1.1900000000000004,0,0,1.1900000000000004,-2.2800000000000065,-2.2799900114536324)"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="m20.479 7.578-5.386-4.453a4.814 4.814 0 0 0-6.186 0L3.521 7.578C2.551 8.381 2 9.597 2 10.866v6.945C2 20.066 3.734 22 6 22h2a2 2 0 0 0 2-2v-3.252c0-1.268.952-2.19 2-2.19s2 .922 2 2.19V20a2 2 0 0 0 2 2h2c2.266 0 4-1.934 4-4.19v-6.944c0-1.269-.55-2.485-1.521-3.288z"
-                        clip-rule="evenodd"
-                        opacity="1"
-                        data-original="#000000"
-                        class=""
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <p>Inicio</p>
-              </button>
-            </ion-button>
-
-            <ion-button class="mini-block" router-link="/tabs/appoint">
-              <button href="/tabs/appoint">
-                <div class="square">
-                  <svg
-                    x="0"
-                    y="0"
-                    viewBox="0 0 512 512"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                    class="nav-ico"
-                  >
-                    <g
-                      transform="matrix(1.2300000000000002,0,0,1.2300000000000002,-58.88000263214127,-58.88000263214127)"
-                    >
-                      <path
-                        d="M256 51.74C143.19 51.74 51.74 143.19 51.74 256S143.19 460.26 256 460.26 460.26 368.81 460.26 256 368.81 51.74 256 51.74zm59.69 271.96c-3.9 3.91-9.02 5.86-14.14 5.86s-10.24-1.95-14.14-5.86l-53.06-53.06a20.006 20.006 0 0 1-5.86-14.14V155.04c0-11.04 8.95-20 20-20s20 8.96 20 20v93.18l47.2 47.2c7.81 7.81 7.81 20.47 0 28.28z"
-                        opacity="1"
-                        data-original="#000000"
-                        class=""
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <p>Citas</p>
-              </button>
-            </ion-button>
-
-            <ion-button class="mini-block" router-link="/tabs/orders">
-              <button href="/tabs/orders">
-                <div class="square">
-                  <svg
-                    x="0"
-                    y="0"
-                    viewBox="0 0 32 32"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                    fill-rule="evenodd"
-                    class="nav-ico"
-                  >
-                    <g
-                      transform="matrix(1.0699999999999998,0,0,1.0699999999999998,-1.1434975838661146,-1.0965024161338732)"
-                    >
-                      <path
-                        d="M15 20c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 12 17H5c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 2 20v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 5 30h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 15 27zm15 0c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 27 17h-7c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 17 20v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 20 30h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 30 27zm-4.379-5.207 4.172-4.172a3 3 0 0 0 0-4.242l-4.172-4.172a3 3 0 0 0-4.242 0l-4.172 4.172a3 3 0 0 0 0 4.242l4.172 4.172a3 3 0 0 0 4.242 0zM15 5c0-.796-.316-1.559-.879-2.121A2.996 2.996 0 0 0 12 2H5c-.796 0-1.559.316-2.121.879A2.996 2.996 0 0 0 2 5v7c0 .796.316 1.559.879 2.121A2.996 2.996 0 0 0 5 15h7c.796 0 1.559-.316 2.121-.879A2.996 2.996 0 0 0 15 12z"
-                        opacity="1"
-                        data-original="#000000"
-                        class=""
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
+            <button class="mini-block" v-on:click="orders">
+              <div class="square">
+                <svg
+                  x="0"
+                  y="0"
+                  viewBox="0 0 456.569 456.569"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class="nav-ico"
+                >
+                  <g>
+                    <path
+                      d="M345.805 339.465c-29.323-.028-53.117 23.72-53.146 53.043s23.72 53.117 53.043 53.146c29.323.028 53.117-23.72 53.146-53.043v-.051c-.028-29.292-23.752-53.038-53.043-53.095zM439.976 85.221a20.44 20.44 0 0 0-3.855-.373H112.845l-5.12-34.253c-3.19-22.748-22.648-39.673-45.619-39.68H20.48C9.169 10.915 0 20.084 0 31.395s9.169 20.48 20.48 20.48h41.677a5.12 5.12 0 0 1 5.12 4.506l31.539 216.166c4.324 27.468 27.951 47.732 55.757 47.821h213.043c26.771.035 49.866-18.78 55.245-45.005l33.331-166.144c2.149-11.105-5.111-21.849-16.216-23.998zM215.737 390.286c-1.247-28.463-24.737-50.869-53.228-50.77-29.299 1.184-52.091 25.896-50.907 55.195 1.136 28.113 24.005 50.458 52.136 50.943h1.28c29.295-1.284 52.002-26.073 50.719-55.368z"
+                      fill="#00689c"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
                 <p>Órdenes</p>
-              </button>
-            </ion-button>
+              </div>
+            </button>
 
-            <ion-button class="mini-block" router-link="/tabs/account">
-              <button href="/tabs/account">
-                <div class="square">
-                  <svg
-                    class="nav-ico"
-                    x="0"
-                    y="0"
-                    viewBox="0 0 24 24"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
+            <button class="mini-block" v-on:click="account">
+              <div class="square">
+                <svg
+                  class="nav-ico"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g
+                    transform="matrix(1.2200000000000004,0,0,1.2200000000000004,-2.6395734596252485,-2.6367001342773477)"
                   >
-                    <g
-                      transform="matrix(1.2200000000000004,0,0,1.2200000000000004,-2.6395734596252485,-2.6367001342773477)"
-                    >
-                      <g data-name="Layer 2">
-                        <circle
-                          cx="12"
-                          cy="7"
-                          r="4.75"
-                          opacity="1"
-                          data-original="#000000"
-                          class=""
-                        ></circle>
-                        <path
-                          d="m20.47 17.32-.13-.32a6 6 0 0 0-5.46-3.78H9.13A6 6 0 0 0 3.67 17l-.14.31a3.32 3.32 0 0 0 .25 3.12 2.7 2.7 0 0 0 2.29 1.29h11.85a2.72 2.72 0 0 0 2.3-1.29 3.33 3.33 0 0 0 .25-3.11z"
-                          opacity="1"
-                          data-original="#000000"
-                          class=""
-                        ></path>
-                      </g>
+                    <g data-name="Layer 2">
+                      <circle
+                        cx="12"
+                        cy="7"
+                        r="4.75"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></circle>
+                      <path
+                        d="m20.47 17.32-.13-.32a6 6 0 0 0-5.46-3.78H9.13A6 6 0 0 0 3.67 17l-.14.31a3.32 3.32 0 0 0 .25 3.12 2.7 2.7 0 0 0 2.29 1.29h11.85a2.72 2.72 0 0 0 2.3-1.29 3.33 3.33 0 0 0 .25-3.11z"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></path>
                     </g>
-                  </svg>
-                </div>
+                  </g>
+                </svg>
                 <p>Cuenta</p>
-              </button>
-            </ion-button>
+              </div>
+            </button>
           </div>
         </div>
         <div class="block-ct">
           <div class="block-col">
-            <ion-button class="block-g" router-link="/tabs/tab1">
+            <ion-button class="block-g-of" router-link="/tabs/tab1">
               <button href="/tabs/tab1">
                 <svg
                   x="0"
@@ -226,97 +164,91 @@
               </button>
             </ion-button>
 
-            <ion-button class="block-m" href="https://brazwrap.es/acerca-de/">
-              <button href="https://brazwrap.es/acerca-de/">
-                <svg
-                  x="0"
-                  y="0"
-                  viewBox="0 0 24 24"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class="block-m-ico"
-                >
-                  <g>
-                    <path
-                      fill="#ffffff"
-                      fill-rule="evenodd"
-                      d="M3.994 3.011c2.196.248 5.137.911 7.256 2.367V20.74c-2.119-1.456-5.06-2.119-7.256-2.367C2.896 18.248 2 17.332 2 16.2V4.935c0-1.131.896-2.048 1.994-1.924zm11.037 16.544c-.812.32-1.59.71-2.281 1.184V5.38c2.119-1.457 5.06-2.12 7.256-2.368C21.104 2.887 22 3.804 22 4.935v9.481a5 5 0 0 0-6.97 5.139zM5.114 7.513a.75.75 0 0 0-.23 1.483c1.229.19 2.586.505 3.844.991a.75.75 0 1 0 .542-1.399c-1.386-.536-2.853-.873-4.156-1.075zm-.856 4.627a.75.75 0 0 1 .856-.626c.66.102 1.36.238 2.068.417a.75.75 0 0 1-.366 1.455 21.193 21.193 0 0 0-1.932-.39.75.75 0 0 1-.626-.856zM19 18.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75zM19 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
-                      clip-rule="evenodd"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                  </g>
-                </svg>
-                <p>Acerca</p>
-              </button>
-            </ion-button>
+            <button class="block-m" v-on:click="about">
+              <svg
+                x="0"
+                y="0"
+                viewBox="0 0 24 24"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="block-m-ico"
+              >
+                <g>
+                  <path
+                    fill="#ffffff"
+                    fill-rule="evenodd"
+                    d="M3.994 3.011c2.196.248 5.137.911 7.256 2.367V20.74c-2.119-1.456-5.06-2.119-7.256-2.367C2.896 18.248 2 17.332 2 16.2V4.935c0-1.131.896-2.048 1.994-1.924zm11.037 16.544c-.812.32-1.59.71-2.281 1.184V5.38c2.119-1.457 5.06-2.12 7.256-2.368C21.104 2.887 22 3.804 22 4.935v9.481a5 5 0 0 0-6.97 5.139zM5.114 7.513a.75.75 0 0 0-.23 1.483c1.229.19 2.586.505 3.844.991a.75.75 0 1 0 .542-1.399c-1.386-.536-2.853-.873-4.156-1.075zm-.856 4.627a.75.75 0 0 1 .856-.626c.66.102 1.36.238 2.068.417a.75.75 0 0 1-.366 1.455 21.193 21.193 0 0 0-1.932-.39.75.75 0 0 1-.626-.856zM19 18.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75zM19 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                    clip-rule="evenodd"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                </g>
+              </svg>
+              <p>Acerca</p>
+            </button>
           </div>
           <div class="block-col">
-            <ion-button class="block-m" href="https://brazwrap.es/brazshop/">
-              <button href="https://brazwrap.es/brazshop/">
-                <svg
-                  x="0"
-                  y="0"
-                  viewBox="0 0 28 28"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class="block-m-ico"
-                >
-                  <g>
-                    <switch>
-                      <g>
-                        <path
-                          d="M10 9c.55 0 1-.45 1-1V7c0-1.66 1.34-3 3-3s3 1.34 3 3v1c0 .55.45 1 1 1s1-.45 1-1V7c0-2.76-2.24-5-5-5S9 4.24 9 7v1c0 .55.45 1 1 1zm4 8c-2.76 0-5-2.24-5-5 0-.55.45-1 1-1s1 .45 1 1c0 1.66 1.34 3 3 3s3-1.34 3-3c0-.55.45-1 1-1s1 .45 1 1c0 2.76-2.24 5-5 5zm11 2.9L24 10c0-1.66-1.34-3-3-3H7a2.989 2.989 0 0 0-3 2.9L3 20c0 3.31 2.69 6 6 6h10c3.33-.01 6.01-2.72 6-6.05v-.05z"
-                          opacity="1"
-                          data-original="#000000"
-                          class=""
-                        ></path>
-                      </g>
-                    </switch>
-                  </g>
-                </svg>
-                <p>BrazShop</p>
-              </button>
-            </ion-button>
+            <button class="block-m" v-on:click="brazshop">
+              <svg
+                x="0"
+                y="0"
+                viewBox="0 0 28 28"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="block-m-ico"
+              >
+                <g>
+                  <switch>
+                    <g>
+                      <path
+                        d="M10 9c.55 0 1-.45 1-1V7c0-1.66 1.34-3 3-3s3 1.34 3 3v1c0 .55.45 1 1 1s1-.45 1-1V7c0-2.76-2.24-5-5-5S9 4.24 9 7v1c0 .55.45 1 1 1zm4 8c-2.76 0-5-2.24-5-5 0-.55.45-1 1-1s1 .45 1 1c0 1.66 1.34 3 3 3s3-1.34 3-3c0-.55.45-1 1-1s1 .45 1 1c0 2.76-2.24 5-5 5zm11 2.9L24 10c0-1.66-1.34-3-3-3H7a2.989 2.989 0 0 0-3 2.9L3 20c0 3.31 2.69 6 6 6h10c3.33-.01 6.01-2.72 6-6.05v-.05z"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></path>
+                    </g>
+                  </switch>
+                </g>
+              </svg>
+              <p>BrazShop</p>
+            </button>
 
-            <ion-button class="block-g" router-link="/tabs/tab1">
-              <button href="/tabs/tab1">
-                <svg
-                  x="0"
-                  y="0"
-                  viewBox="0 0 512 512"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class="block-g-ico"
-                >
-                  <g>
-                    <path
-                      d="M27.7 297.6c0 3 2.5 5.5 5.5 5.5s5.5-2.5 5.5-5.5c0-10.3 8.3-18.4 18.4-18.4 3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5c-10.1 0-18.4-8.1-18.4-18.4 0-3-2.5-5.5-5.5-5.5s-5.5 2.5-5.5 5.5c0 10-8.1 18.4-18.4 18.4-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c10.1-.1 18.4 8.2 18.4 18.4zM502.1 375.5c-28.9-22.9-67.8-70.6-48.9-153.8 19.8-86.8-24.8-154.4-50.4-184.5-6.2-7.4-17.5-7.5-24.2-.5-77.1 80.2-136.1 73.3-209.4 54.6-49.8-12.7-102 23.8-127.8 45.6-7 5.9-7.6 16.3-1.6 23.2 28.3 32 49.2 69.2 62.6 110.9l68-68c12.6-12.6 30.2-11.3 40.7-.8 4.6 4.6 7.3 10.4 8.1 16.4l14.5-14.5c8.9-8.9 23.7-11.4 35.5-3.6 7.2 4.7 11.5 12.6 12.5 20 .6-.5 4.9-5.7 11.9-8.3 11-4.2 22.6-1.3 30.4 6.4 11.4 11.4 11 29.4 0 40.4l-5.5 5.5c21 2.9 34.6 29.8 15.8 48.6L226.9 420.4c-1.4 1.4-.8 2.8-.4 3.5.5.7 1.5 1.8 3.3 1.1l38.1-18.6c18.2-7 37.5-1.6 46.6 7.5 10.2 10.2 8.4 27.5-4 35.3l-17.9 12c82.4 9.7 166-33.1 208-59.1 9.6-6 10.4-19.6 1.5-26.6zM240.1 213.3c-.1 0-.1 0 0 0z"
-                      fill="#00689c"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                    <path
-                      d="M90.8 506.3c7.7 7.7 20.1 7.6 27.7 0l1-1c7.2-7.2 17.8-10 27.6-7.4 31 8.5 64.2 3.5 91.3-13.8 8.1-5.4 59.5-39.8 66-44.1 6.9-4.3 7.3-13.3 2.3-18.3-.5-.5-1.1-1-1.7-1.4-9.6-6.5-21.9-7.9-32.7-3.8l-38 18.6c-6.7 2.6-13.3.4-16.9-5.1-3.6-5.6-2.9-12.5 1.8-17.3l108.1-108.1c6.1-6.1 7.1-16.5-.4-24.1l-.3-.3c-6.5-6.5-17-6.5-23.6-.1l-87 87c-2.2 2.2-5.6 2.2-7.8 0s-2.2-5.6 0-7.8l.2-.2.9-.9.5-.5-.2.2 106.5-106.5c6.9-6.9 6.8-18 0-24.8-4.3-4.3-10.3-5.9-15.8-4.8-6.6 1.3 1.8-6.1-117 112.7-2.2 2.2-5.6 2.2-7.8 0s-2.2-5.6 0-7.8l90.3-90.3c6.5-6.5 7.3-17.8-1.1-25.3-6.6-5.8-17.1-5.3-23.3.9l-.2.2-.3.3-.3.3-.2.2-.4.4-.1.1-.1.1-88.9 88.9c-2.2 2.2-5.6 2.2-7.8 0s-2.2-5.6 0-7.8l60.1-60.1c6.6-6.7 6.6-17.6-.1-24.3s-17.7-6.7-24.4 0l-108.1 108c-11 11-19.6 23.8-25.6 38.1-4.9 11.9-7.9 24.4-8.9 37.2-.5 6.7-3.6 13.3-8.7 18.4l-1.6 1.6c-7.7 7.7-7.7 20.1 0 27.7z"
-                      fill="#00689c"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                    <path
-                      d="m209.1 358.3.6-.6-.3.3-.3.3zM241.3 212l-.3.3.3-.3zM278.5 20.7c0-3-2.5-5.5-5.5-5.5s-5.5 2.5-5.5 5.5c0 10.4-8.6 18.4-18.4 18.4-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c10.2 0 18.4 8.3 18.4 18.4 0 3 2.5 5.5 5.5 5.5s5.5-2.5 5.5-5.5c0-10.3 8.2-18.4 18.4-18.4 3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5c-10.1 0-18.4-8.1-18.4-18.4zM9.2 35c10.2 0 18.4 8.3 18.4 18.4 0 3 2.5 5.5 5.5 5.5s5.5-2.5 5.5-5.5C38.7 43.2 47 35 57.1 35c3 0 5.5-2.5 5.5-5.5S60.2 24 57.1 24c-10.3 0-18.4-8.4-18.4-18.4 0-3-2.5-5.5-5.5-5.5s-5.5 2.5-5.5 5.5c0 10-8.1 18.4-18.4 18.4-3 0-5.5 2.5-5.5 5.5S6.2 35 9.2 35z"
-                      fill="#00689c"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                  </g>
-                </svg>
-                <p>BrazWash</p>
-              </button>
-            </ion-button>
+            <button class="block-g" v-on:click="brazwash">
+              <svg
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="block-g-ico"
+              >
+                <g>
+                  <path
+                    d="M27.7 297.6c0 3 2.5 5.5 5.5 5.5s5.5-2.5 5.5-5.5c0-10.3 8.3-18.4 18.4-18.4 3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5c-10.1 0-18.4-8.1-18.4-18.4 0-3-2.5-5.5-5.5-5.5s-5.5 2.5-5.5 5.5c0 10-8.1 18.4-18.4 18.4-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c10.1-.1 18.4 8.2 18.4 18.4zM502.1 375.5c-28.9-22.9-67.8-70.6-48.9-153.8 19.8-86.8-24.8-154.4-50.4-184.5-6.2-7.4-17.5-7.5-24.2-.5-77.1 80.2-136.1 73.3-209.4 54.6-49.8-12.7-102 23.8-127.8 45.6-7 5.9-7.6 16.3-1.6 23.2 28.3 32 49.2 69.2 62.6 110.9l68-68c12.6-12.6 30.2-11.3 40.7-.8 4.6 4.6 7.3 10.4 8.1 16.4l14.5-14.5c8.9-8.9 23.7-11.4 35.5-3.6 7.2 4.7 11.5 12.6 12.5 20 .6-.5 4.9-5.7 11.9-8.3 11-4.2 22.6-1.3 30.4 6.4 11.4 11.4 11 29.4 0 40.4l-5.5 5.5c21 2.9 34.6 29.8 15.8 48.6L226.9 420.4c-1.4 1.4-.8 2.8-.4 3.5.5.7 1.5 1.8 3.3 1.1l38.1-18.6c18.2-7 37.5-1.6 46.6 7.5 10.2 10.2 8.4 27.5-4 35.3l-17.9 12c82.4 9.7 166-33.1 208-59.1 9.6-6 10.4-19.6 1.5-26.6zM240.1 213.3c-.1 0-.1 0 0 0z"
+                    fill="#00689c"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                  <path
+                    d="M90.8 506.3c7.7 7.7 20.1 7.6 27.7 0l1-1c7.2-7.2 17.8-10 27.6-7.4 31 8.5 64.2 3.5 91.3-13.8 8.1-5.4 59.5-39.8 66-44.1 6.9-4.3 7.3-13.3 2.3-18.3-.5-.5-1.1-1-1.7-1.4-9.6-6.5-21.9-7.9-32.7-3.8l-38 18.6c-6.7 2.6-13.3.4-16.9-5.1-3.6-5.6-2.9-12.5 1.8-17.3l108.1-108.1c6.1-6.1 7.1-16.5-.4-24.1l-.3-.3c-6.5-6.5-17-6.5-23.6-.1l-87 87c-2.2 2.2-5.6 2.2-7.8 0s-2.2-5.6 0-7.8l.2-.2.9-.9.5-.5-.2.2 106.5-106.5c6.9-6.9 6.8-18 0-24.8-4.3-4.3-10.3-5.9-15.8-4.8-6.6 1.3 1.8-6.1-117 112.7-2.2 2.2-5.6 2.2-7.8 0s-2.2-5.6 0-7.8l90.3-90.3c6.5-6.5 7.3-17.8-1.1-25.3-6.6-5.8-17.1-5.3-23.3.9l-.2.2-.3.3-.3.3-.2.2-.4.4-.1.1-.1.1-88.9 88.9c-2.2 2.2-5.6 2.2-7.8 0s-2.2-5.6 0-7.8l60.1-60.1c6.6-6.7 6.6-17.6-.1-24.3s-17.7-6.7-24.4 0l-108.1 108c-11 11-19.6 23.8-25.6 38.1-4.9 11.9-7.9 24.4-8.9 37.2-.5 6.7-3.6 13.3-8.7 18.4l-1.6 1.6c-7.7 7.7-7.7 20.1 0 27.7z"
+                    fill="#00689c"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                  <path
+                    d="m209.1 358.3.6-.6-.3.3-.3.3zM241.3 212l-.3.3.3-.3zM278.5 20.7c0-3-2.5-5.5-5.5-5.5s-5.5 2.5-5.5 5.5c0 10.4-8.6 18.4-18.4 18.4-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c10.2 0 18.4 8.3 18.4 18.4 0 3 2.5 5.5 5.5 5.5s5.5-2.5 5.5-5.5c0-10.3 8.2-18.4 18.4-18.4 3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5c-10.1 0-18.4-8.1-18.4-18.4zM9.2 35c10.2 0 18.4 8.3 18.4 18.4 0 3 2.5 5.5 5.5 5.5s5.5-2.5 5.5-5.5C38.7 43.2 47 35 57.1 35c3 0 5.5-2.5 5.5-5.5S60.2 24 57.1 24c-10.3 0-18.4-8.4-18.4-18.4 0-3-2.5-5.5-5.5-5.5s-5.5 2.5-5.5 5.5c0 10-8.1 18.4-18.4 18.4-3 0-5.5 2.5-5.5 5.5S6.2 35 9.2 35z"
+                    fill="#00689c"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                </g>
+              </svg>
+              <p>BrazWash</p>
+            </button>
           </div>
         </div>
       </main>
@@ -407,6 +339,8 @@ button {
   justify-content: center;
   width: fit-content;
   height: fit-content;
+  gap: 0.4rem;
+  width: 50%;
 }
 
 .mini-block button {
@@ -421,30 +355,25 @@ button {
 
 .mini-block p {
   margin: 0px;
-  color: white;
+  color: #00689c;
   font-weight: 800;
   font-size: 1rem;
 }
 
-.mini-block p {
-  margin: 0px;
-  color: white;
-  font-weight: 800;
-}
-
 .square {
   background-color: white;
-  width: 3.7rem;
+  width: 100%;
   height: 3.7rem;
   border-radius: 25px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
 }
 
 .nav-ico {
-  width: 40%;
+  width: fit-content;
   height: 45%;
   fill: #00689c;
 }
@@ -473,7 +402,7 @@ button {
   gap: 10px;
 }
 
-.block-g {
+.block-g-of {
   background-color: #00689c;
   width: 8.5rem;
   height: 9rem;
@@ -483,6 +412,40 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.block-g-of button {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 15px;
+}
+
+.block-g-of p {
+  margin: 0px;
+  color: white;
+  font-weight: 800;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.block-g {
+  background-color: #00689c;
+  width: 8.5rem;
+  height: 9rem;
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 15px;
 }
 
 .block-g button {
@@ -521,8 +484,10 @@ button {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 10px;
 }
 
 .block-m button {
@@ -611,7 +576,7 @@ button {
 .help-btn button {
   width: 4rem;
   height: 4rem;
-  background-color: #49ade7;
+  background-color: #0089c1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -692,7 +657,7 @@ ion-button {
   width: 18vh;
   height: 100%;
   border-radius: 40px;
-  background-color: #49ade7;
+  background-color: #0089c1;
 }
 
 .image-container .brand-svg {
@@ -718,7 +683,7 @@ ion-button {
   font-weight: 700;
   font-size: 1.7rem;
   text-wrap: wrap;
-  color: #49ade7;
+  color: #0089c1;
   text-align: start;
 }
 
@@ -736,8 +701,11 @@ ion-button {
 <script>
 import { IonPage, IonContent, useBackButton, IonButton } from "@ionic/vue";
 import { useRouter } from "vue-router";
-import jsonData from "@/components/json/cars.json";
 import { ref } from "vue";
+import { InAppBrowser } from "@awesome-cordova-plugins/in-app-browser";
+
+const settings =
+  "presentationstyle=formsheet,toolbarposition=top,fullscreen=no,hideurlbar=yes,toolbarcolor=#0089c1,closebuttoncolor=#ffffff,hidenavigationbuttons=yes,hardwareback=yes,lefttoright=yes,zoom=no";
 
 export default {
   components: {
@@ -747,12 +715,7 @@ export default {
     useBackButton,
     useRouter,
     ref,
-  },
-
-  data() {
-    return {
-      data: jsonData,
-    };
+    settings,
   },
 
   computed: {},
@@ -770,57 +733,7 @@ export default {
         }, 10);
       }, 5);
     });
-    setTimeout(() => {
-      let data, obj, buttons, arrBtn, arr, printNumbers, arrNum;
-
-      data = jsonData;
-
-      obj = [];
-
-      data.forEach((item) => {
-        if (!obj[item.brand]) {
-          obj[item.brand] = 1;
-        } else {
-          obj[item.brand] += 1;
-        }
-      });
-
-      buttons = document.querySelectorAll(".btn");
-      arrBtn = Object.values(buttons);
-
-      arr = arrBtn.map((x) => {
-        let values = x.getAttribute("value");
-        return values;
-      });
-
-      printNumbers = document.querySelectorAll(".printNumber");
-      arrNum = Object.values(printNumbers);
-
-      for (var i = 0; i < arr.length; i++) {
-        if (obj[arr[i]] == 1) {
-          arrNum[i].innerHTML = `${obj[arr[i]]} Coche`;
-        } else if (obj[arr[i]] > 1) {
-          arrNum[i].innerHTML = `${obj[arr[i]]} Coches`;
-        } else {
-          arrNum[i].innerHTML = `0 Coches`;
-        }
-      }
-
-      buttons.forEach((bt) => {
-        bt.addEventListener("click", (e) => {
-          localStorage.setItem("brandSel", bt.value);
-        });
-      }, 5);
-
-      if (!localStorage.getItem("visited")) {
-        localStorage.setItem("graphic", "medium");
-        localStorage.setItem("shadow", false);
-        localStorage.setItem("alias", true);
-        localStorage.setItem("renderH", 1024);
-        localStorage.setItem("renderW", 768);
-        localStorage.setItem("visited", true);
-      }
-    });
+    setTimeout(() => {}, 10);
   },
 
   ionViewDidEnter() {
@@ -831,6 +744,34 @@ export default {
     localStorage.setItem("view", false);
   },
 
-  methods: {},
+  methods: {
+    about: function () {
+      InAppBrowser.create("https://brazwrap.es/acerca-app/", "_self", settings);
+    },
+    brazshop: function () {
+      InAppBrowser.create(
+        "https://brazwrap.es/brazshop-app/",
+        "_self",
+        settings
+      );
+    },
+    orders: function () {
+      InAppBrowser.create(
+        "https://brazwrap.es/carrito-app/",
+        "_self",
+        settings
+      );
+    },
+    brazwash: function () {
+      InAppBrowser.create(
+        "https://brazwrap.es/agendamento-app/",
+        "_self",
+        settings
+      );
+    },
+    account: function () {
+      InAppBrowser.create("https://brazwrap.es/mi-cuenta/", "_self", settings);
+    },
+  },
 };
 </script>

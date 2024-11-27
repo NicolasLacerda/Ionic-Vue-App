@@ -98,7 +98,7 @@ button {
   width: 18vh;
   height: 100%;
   border-radius: 40px;
-  background-color: #49ade7;
+  background-color: #0089c1;
 }
 
 .image-container .brand-svg {
@@ -128,7 +128,7 @@ button {
   font-family: suse;
   font-weight: 700;
   font-size: 2rem;
-  color: #49ade7;
+  color: #0089c1;
   text-align: start;
 }
 
