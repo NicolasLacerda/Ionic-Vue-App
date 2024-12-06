@@ -6,7 +6,7 @@
           <div class="image-container">
             <img
               class="wrap-image"
-              :src="`/assets/img/wrapTypes/${item.image}`"
+              :src="`https://brazwrap.es/wp-content/uploads/assets/img/wrapTypes/${item.image}`"
               alt=""
             />
           </div>

@@ -72,7 +72,7 @@
             <h1>Especialistas en Rotulación de vehículos</h1>
             <video autoplay loop muted plays-inline class="bg-video">
               <source
-                src="/public/assets/img/home-video.webm"
+                src="https://brazwrap.es/wp-content/uploads/assets/img/home-video.webm"
                 type="video/webm"
               />
             </video>

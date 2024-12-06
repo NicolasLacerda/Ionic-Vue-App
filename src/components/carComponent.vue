@@ -6,7 +6,7 @@
           <div class="image-container">
             <img
               class="car-image"
-              :src="`/assets/scenes/${item.url}.png`"
+              :src="`https://brazwrap.es/wp-content/uploads/assets/scenes/${item.url}.png`"
               alt=""
             />
           </div>

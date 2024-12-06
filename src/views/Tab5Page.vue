@@ -869,11 +869,15 @@ export default {
       //Model
       let loader = new GLTFLoader();
       let dloader = new DRACOLoader();
-      dloader.setDecoderPath("assets/draco/javascript/");
+      dloader.setDecoderPath(
+        "https://brazwrap.es/wp-content/uploads/assets/draco/javascript/"
+      );
       dloader.setDecoderConfig({ type: "js" });
       loader.setDRACOLoader(dloader);
       loader.load(
-        `assets/scenes/${localStorage.getItem("carUrl")}.glb`,
+        `https://brazwrap.es/wp-content/uploads/assets/scenes/${localStorage.getItem(
+          "carUrl"
+        )}.glb`,
         async (gltf) => {
           const model = gltf.scene;
 

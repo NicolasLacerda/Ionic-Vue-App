@@ -496,7 +496,7 @@ export default {
       cYear = localStorage.getItem("carYear");
 
       //print car image
-      cImage.innerHTML = `<img src="/assets/scenes/${ciUrl}.png" style="width:60%" >`;
+      cImage.innerHTML = `<img src="https://brazwrap.es/wp-content/uploads/assets/scenes/${ciUrl}.png" style="width:60%" >`;
 
       //Print car name and year
       cName.innerHTML =

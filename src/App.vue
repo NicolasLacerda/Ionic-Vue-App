@@ -11,7 +11,7 @@ import { IonApp, IonRouterOutlet } from "@ionic/vue";
 <style>
 @font-face {
   font-family: suse;
-  src: url(/assets/fonts/suse.ttf);
+  src: url(https://brazwrap.es/wp-content/uploads/assets/fonts/suse.ttf);
 }
 
 ion-button {
